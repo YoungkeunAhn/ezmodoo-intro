@@ -1,4 +1,5 @@
 import BannerSection from 'components/banner-section/BannerSection'
+import Footer from 'components/footer/Footer'
 import OperationSection from 'components/operation-section/OperationSection'
 import MainLayout from 'layout/MainLayout'
 import React from 'react'
@@ -9,9 +10,7 @@ function App() {
       <div>
         <BannerSection />
         <OperationSection />
-        <div className='w-full h-screen'></div>
-        <div className='w-full h-screen'></div>
-        <div className='w-full h-screen'></div>
+        <Footer />
       </div>
     </MainLayout>
   )
