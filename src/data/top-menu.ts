@@ -50,7 +50,7 @@ export const topMenu: MenuType[] = [
 ]
 
 export const headerContent = {
-  text: '대한민국 최초 쿠팡판매 최적화 통합관리 솔루션',
+  title: '대한민국 최초 쿠팡판매 최적화 통합관리 솔루션',
   icons: [
     {
       image: 'header_facebook.png',
@@ -69,6 +69,7 @@ export const headerContent = {
       url: '',
     },
   ],
+  channelName: 'MoDoo pyeonhea',
 }
 
 export const banner = [
