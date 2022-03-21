@@ -1,6 +1,11 @@
 declare type MenuType = {
   title: string
-  subTitle: string[]
+  subTitle: SubTitleType[]
+}
+
+declare type SubTitleType = {
+  title: string
+  url: string
 }
 
 declare type BannerType = {

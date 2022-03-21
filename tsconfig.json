@@ -17,16 +17,7 @@
     "jsx": "react-jsx",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "declaration": true,
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["src/*"],
-      "@pages/*": ["pages/*"],
-      "@components/*": ["components/*"],
-      "@common/*": ["common/*"],
-      "@types": ["types/*"],
-      "@enum": ["enum/*"]
-    }
+    "baseUrl": "src"
   },
   "include": [
     "src",
