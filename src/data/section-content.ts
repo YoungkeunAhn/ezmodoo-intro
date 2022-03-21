@@ -4,27 +4,27 @@ export const operation = {
   itemList: [
     {
       image: 's_operation_item1.png',
-      text: '온라인 판매가 어렵게 느껴지시는분',
+      text: `온라인 판매가<br />어렵게 느껴지시는분`,
       alt: 'earth',
     },
     {
       image: 's_operation_item2.png',
-      text: '판매상품 종류가 많아서 관리가 힘드신분',
+      text: `판매상품 종류가 많아서<br />관리가 힘드신분`,
       alt: 'laptop 3',
     },
     {
       image: 's_operation_item3.png',
-      text: '주문수가 많아서 일손과 시간이 부족한분',
+      text: `주문수가 많아서<br />일손과 시간이 부족한분`,
       alt: 'laptop 1',
     },
     {
       image: 's_operation_item4.png',
-      text: '쿠팡 판매아이디를 더 늘리고 싶으신분',
+      text: `쿠팡 판매아이디를<br />더 늘리고 싶으신분`,
       alt: 'laptop 4',
     },
     {
       image: 's_operation_item5.png',
-      text: '효율적인 광고로 새는 광고비를 막고 싶은분',
+      text: `효율적인 광고로<br />새는 광고비를 막고 싶은분`,
       alt: 'wallet',
     },
   ],
