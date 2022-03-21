@@ -5,9 +5,12 @@ import React from 'react'
 function App() {
   return (
     <div className='App'>
-      <div className='text-blue-600'>Hello react with tailwind</div>
-      <img src={banner[0].image} alt='' />
       <TopMenu />
+      <img className='w-full m-auto' src={banner[0].image} alt='' />
+      <div className='w-full h-screen'></div>
+      <div className='w-full h-screen'></div>
+      <div className='w-full h-screen'></div>
+      <div className='w-full h-screen'></div>
     </div>
   )
 }
