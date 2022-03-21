@@ -25,9 +25,10 @@ function TopMenu() {
       <div
         onMouseOver={() => setTopMenuOver(true)}
         onMouseOut={() => setTopMenuOver(false)}
+        className='sticky top-0 z-50'
       >
         {/* 메인메뉴 */}
-        <ul className='flex justify-around items-center p-3 bg-white sticky top-0 hover:cursor-pointer'>
+        <ul className='flex justify-around items-center p-3 bg-white hover:cursor-pointer'>
           <li className='w-full flex justify-center'>
             <img src='logo.png' alt='logo' className='h-7' />
           </li>
@@ -48,10 +49,10 @@ function TopMenu() {
 
         {/* 서브메뉴 */}
         <ul
-          className={`w-full flex justify-around align-top absolute z-10 bg-white border-t overflow-hidden duration-500 pt-2`}
+          className={`w-full flex justify-around align-top absolute z-50 bg-white border-t overflow-hidden duration-500 pt-2 pb-2`}
           style={{
             transition: 'all 0.5s',
-            height: topMenuOver ? '40%' : 0,
+            height: topMenuOver ? '50vh' : 0,
             opacity: topMenuOver ? 1 : 0,
           }}
         >
@@ -61,7 +62,7 @@ function TopMenu() {
               {menu.subTitle.length !== 0 &&
                 menu.subTitle.map((sub, idx) => (
                   <div
-                    className='text-center box-border hover:cursor-pointer p-1'
+                    className='text-center box-border hover:cursor-pointer p-2'
                     key={idx}
                   >
                     {sub.title}

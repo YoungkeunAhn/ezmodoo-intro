@@ -3,24 +3,29 @@ export const operation = {
   subTitle: '이런 상황이라면? 지금 바로 사용해보세요!',
   itemList: [
     {
-      image: 's_operation_icon1.png',
+      image: 's_operation_item1.png',
       text: '온라인 판매가 어렵게 느껴지시는분',
+      alt: 'earth',
     },
     {
-      image: 's_operation_icon2.png',
+      image: 's_operation_item2.png',
       text: '판매상품 종류가 많아서 관리가 힘드신분',
+      alt: 'laptop 3',
     },
     {
-      image: 's_operation_icon3.png',
+      image: 's_operation_item3.png',
       text: '주문수가 많아서 일손과 시간이 부족한분',
+      alt: 'laptop 1',
     },
     {
-      image: 's_operation_icon4.png',
+      image: 's_operation_item4.png',
       text: '쿠팡 판매아이디를 더 늘리고 싶으신분',
+      alt: 'laptop 4',
     },
     {
-      image: 's_operation_icon5.png',
+      image: 's_operation_item5.png',
       text: '효율적인 광고로 새는 광고비를 막고 싶은분',
+      alt: 'wallet',
     },
   ],
 }

@@ -75,10 +75,3 @@ export const headerContent = {
   ],
   channelName: 'MoDoo pyeonhea',
 }
-
-export const banner = [
-  {
-    image: 'A01.jpg',
-    content: `<h3>언제 일일이 계산기 두들겨요</H3></br></br><h4>재고부터 판매량,판매통계, 광고분석까지</h4><br/>직관적으로 한눈에 보여드립니다.`,
-  },
-]

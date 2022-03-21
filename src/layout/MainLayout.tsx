@@ -1,7 +1,19 @@
+import TopMenu from 'components/top-menu/TopMenu'
 import React from 'react'
 
-function MainLayout() {
-  return <div> MainLayout </div>
+type Props = {
+  children: React.ReactNode
+}
+
+function MainLayout(props: Props) {
+  const { children } = props
+
+  return (
+    <div>
+      <TopMenu />
+      <main>{children}</main>
+    </div>
+  )
 }
 
 export default MainLayout

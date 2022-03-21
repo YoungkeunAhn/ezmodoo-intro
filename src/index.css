@@ -13,3 +13,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 1 !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 16px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #ffd504 !important;
+}
