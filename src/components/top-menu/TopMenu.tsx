@@ -25,20 +25,28 @@ function TopMenu() {
         </div>
       </div>
 
-      <div className='sticky top-0 z-50 w-full bg-white'>
+      <div
+        className='sticky top-0 z-50 w-full bg-white'
+        onMouseOver={() => setTopMenuOver(true)}
+        onMouseOut={() => setTopMenuOver(false)}
+      >
         {/* 메인메뉴 */}
-        <ul className='flex justify-around items-center p-3 bg-white hover:cursor-pointer max-w-[1350px] m-auto'>
+        <ul className='flex justify-center items-center p-3 bg-white hover:cursor-pointer max-w-[1350px] m-auto space-x-4'>
           <li className='w-full flex justify-center'>
             <img src='logo.png' alt='logo' className='h-7' />
           </li>
           {topMenu.map((menu, idx) => (
-            <li
-              key={idx}
-              className='flex justify-center items-center p-1 w-full'
-              onMouseOver={() => setTopMenuOver(true)}
-              onMouseOut={() => setTopMenuOver(false)}
-            >
-              <div className='text-lg font-bold ml-5'>{menu.title}</div>
+            <li key={idx} className='flex justify-left items-center p-1 w-full'>
+              <div className='text-lg font-bold ml-5 flex items-center justify-left'>
+                {menu.title === '로그인' && (
+                  <img
+                    src='login_icon.png'
+                    alt='login icon'
+                    className='object-contain mr-1'
+                  />
+                )}
+                {menu.title}
+              </div>
             </li>
           ))}
           <li className='w-full flex justify-center'>
@@ -59,7 +67,7 @@ function TopMenu() {
           }}
         >
           <ul
-            className={`w-full flex justify-around align-top bg-white  duration-500 pt-2 pb-2 max-w-[1350px]`}
+            className={`w-full flex justify-center align-top bg-white  duration-500 pt-2 pb-2 max-w-[1350px] space-x-4`}
           >
             <li className='w-full'></li>
             {topMenu.map((menu, idx) => (
@@ -67,7 +75,7 @@ function TopMenu() {
                 {menu.subTitle.length !== 0 &&
                   menu.subTitle.map((sub, idx) => (
                     <div
-                      className='box-border text-sm ml-[48px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'
+                      className='box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'
                       key={idx}
                     >
                       {sub.title === '전체서비스' && (
