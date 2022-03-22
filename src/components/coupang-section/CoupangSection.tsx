@@ -13,7 +13,7 @@ function CoupangSection() {
         ></h1>
         {coupang.parnassus.map((p, idx) => (
           <p
-            className='text-xl mb-5'
+            className='text-2xl mb-5 font-medium leading-loose'
             key={idx}
             dangerouslySetInnerHTML={{ __html: p }}
           ></p>
