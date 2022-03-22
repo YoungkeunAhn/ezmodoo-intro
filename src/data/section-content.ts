@@ -32,16 +32,15 @@ export const operation = {
 
 export const ees = {
   title: 'EVERYONE·EASY·SIMPLE',
-  content:
-    '주문수집과 CS처리, 정산은 물론이고 매출통계와 광고효율성까지 챙겨요!',
-  bottom: `<span>모두편해</span> 하나로 이모든 업무와 처리가 가능합니다.`,
+  content: `주문수집과 CS처리, 정산은 물론이고<br />매출통계와 광고효율성까지 챙겨요!`,
+  bottom: '하나로 이모든 업무와 처리가 가능합니다.',
 }
 
 export const coupang = {
-  title: `<span className="text-[#FF9600]">모두편해</span>는 쿠팡셀러라면 꼭 필요한 통합솔루션 입니다 `,
+  title: `<span class="text-[#FF9600] font-bold">모두편해</span>는 쿠팡셀러라면 꼭 필요한 통합솔루션 입니다 `,
   parnassus: [
-    `<span className="text-[#FF9600]">국내 최초! 모두편해는 쿠팡판매자에 특화된 통합솔루션으로 운영중인 광고의 광고비 지출을 원하는 시간과 금액을 설정하여 운영할 수 있으며, 효율이 떨어지는 상품을 쉽게 파악할 수 있도록 <span className="font-bold">광고 통계</span>와 <span className="font-bold">광고전환 순이익금</span> 및 <span className="font-bold">광고전환 매출</span>을 제공합니다. 카테고리 내에서 해당상품의 판매순위도 확인이 가능합니다.`,
-    `또한, 최근 판매된 수량 통계를 바탕으로 판매중인 상품의 재고가 품절되지 않도록 미리 체크하여 필요한 수량을 알려주는 <span className="font-bold">재고알림</span>기능과 쿠팡<span className="font-bold">판매순위</span>를 체크할수 있는 기능은 쿠팡셀러라면 꼭 필요한 기능입니다.`,
+    `<span class="text-[#FF9600] font-bold">국내 최초!</span> 모두편해는 쿠팡판매자에 특화된 통합솔루션으로 운영중인 광고의 광고비 지출을 원하는 시간과 금액을 설정하여 운영할 수 있으며, 효율이 떨어지는 상품을 쉽게 파악할 수 있도록 <span class="font-bold">광고 통계</span>와 <span class="font-bold">광고전환 순이익금</span> 및 <span class="font-bold">광고전환 매출</span>을 제공합니다. 카테고리 내에서 해당상품의 판매순위도 확인이 가능합니다.`,
+    `또한, 최근 판매된 수량 통계를 바탕으로 판매중인 상품의 재고가 품절되지 않도록 미리 체크하여 필요한 수량을 알려주는 <span class="font-bold">재고알림</span>기능과 쿠팡<span class="font-bold">판매순위</span>를 체크할수 있는 기능은 쿠팡셀러라면 꼭 필요한 기능입니다.`,
   ],
   image: '',
   itemList: [
@@ -59,7 +58,7 @@ export const coupang = {
 }
 
 export const sellerEasy = {
-  title: `셀러가 이렇게 쉬울 일이야? 모두에게 쉽고 너무 편해서 <span className="text-[#FF9600]">모두편해</span>`,
+  title: `셀러가 이렇게 쉬울 일이야? 모두에게 쉽고 너무 편해서 <span class="text-[#FF9600]">모두편해</span>`,
   subTitle: `주문수집, 상품관리 및 재고관리 완벽!<br />API의 자동 주문수집과 재고통합 관리기능은 고객님의 실재고와 쿠팡의 재고수량을 실시간 자동으로 관리할 수 있으니 시간, 비용, 일손이 확 줄어듭니다.`,
   images: ['sub_seller_image1.jpg', 'sub_seller_image2.jpg'],
 }
