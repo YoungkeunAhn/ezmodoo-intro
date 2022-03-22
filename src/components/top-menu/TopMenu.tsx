@@ -1,3 +1,4 @@
+import PlusCircle from 'asset/PlusCircle'
 import { headerContent, topMenu } from 'data/top-menu'
 import React, { useState } from 'react'
 
@@ -6,8 +7,8 @@ function TopMenu() {
 
   return (
     <>
-      <div className='p-5 bg-[#E3EAF1] relative flex justify-center'>
-        <p>{headerContent.title}</p>
+      <div className='p-5 bg-[#E3EAF1] relative flex justify-center border-b'>
+        <p className='text-[#888] text-sm'>{headerContent.title}</p>
         <div className='flex justify-center items-center absolute right-[16%] space-x-2'>
           {headerContent.icons.map((icon, idx) => (
             <a href={icon.url} key={idx}>
@@ -24,11 +25,7 @@ function TopMenu() {
         </div>
       </div>
 
-      <div
-        onMouseOver={() => setTopMenuOver(true)}
-        onMouseOut={() => setTopMenuOver(false)}
-        className='sticky top-0 z-50 w-full bg-white'
-      >
+      <div className='sticky top-0 z-50 w-full bg-white'>
         {/* 메인메뉴 */}
         <ul className='flex justify-around items-center p-3 bg-white hover:cursor-pointer max-w-[1350px] m-auto'>
           <li className='w-full flex justify-center'>
@@ -38,12 +35,14 @@ function TopMenu() {
             <li
               key={idx}
               className='flex justify-center items-center p-1 w-full'
+              onMouseOver={() => setTopMenuOver(true)}
+              onMouseOut={() => setTopMenuOver(false)}
             >
               <div className='text-lg font-bold ml-5'>{menu.title}</div>
             </li>
           ))}
           <li className='w-full flex justify-center'>
-            <button className='inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out'>
+            <button className='inline-block px-6 py-2.5 bg-[#7FA2C2] text-white font-medium text-md leading-tight uppercase rounded-[40px] shadow-md hover:bg-[#6286A7] hover:shadow-lg focus:bg-[#6286A7] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#6286A7] active:shadow-lg transition duration-150 ease-in-out'>
               무료체험신청
             </button>
           </li>
@@ -68,9 +67,14 @@ function TopMenu() {
                 {menu.subTitle.length !== 0 &&
                   menu.subTitle.map((sub, idx) => (
                     <div
-                      className='box-border text-sm ml-[48px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1'
+                      className='box-border text-sm ml-[48px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'
                       key={idx}
                     >
+                      {sub.title === '전체서비스' && (
+                        <span>
+                          <PlusCircle />
+                        </span>
+                      )}
                       {sub.title}
                     </div>
                   ))}

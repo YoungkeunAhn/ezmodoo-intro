@@ -8,6 +8,7 @@ function Footer() {
       style={{
         background: 'url(footer_bg.png)',
         backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
       }}
     >
       <img src='white_logo.png' alt='white logo' width={150} />
