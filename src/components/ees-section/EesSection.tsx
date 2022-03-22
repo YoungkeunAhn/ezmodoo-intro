@@ -12,7 +12,7 @@ function EesSection() {
       }}
       className='h-[40rem] flex justify-center items-center'
     >
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center ml-48'>
         <div className='text-white text-center'>
           <h1 className='text-6xl font-medium mb-10'>{ees.title}</h1>
           <h2
@@ -20,7 +20,7 @@ function EesSection() {
             dangerouslySetInnerHTML={{ __html: ees.content }}
           ></h2>
           <h1 className='text-3xl'>
-            <span className='text-4xl font-medium'>모두편해 </span>
+            <span className='text-4xl font-bold'>모두편해 </span>
             {ees.bottom}
           </h1>
         </div>

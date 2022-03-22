@@ -17,8 +17,8 @@ function FulfillmentSection() {
           <div>
             <div className='flex justify-between text-white items-end'>
               <div className='flex'>
-                <div className='flex flex-col mr-10 mb-12 items-start'>
-                  <div className='flex mb-4 justify-center'>
+                <div className='flex flex-col mr-10 mb-11 items-start'>
+                  <div className='flex mb-3 justify-center'>
                     <img
                       src='white_logo.png'
                       alt='white logo'
@@ -33,7 +33,7 @@ function FulfillmentSection() {
                     <img
                       src='fulfillment_icon.png'
                       alt='fulfillment icon'
-                      className='object-contain'
+                      className='object-contain mr-3'
                       width={50}
                     />
                     <h1 className='text-4xl whitespace-nowrap'>
@@ -47,7 +47,7 @@ function FulfillmentSection() {
                 className='w-[32rem] text-lg'
                 style={{ wordBreak: 'keep-all' }}
               ></h2>
-              <div className='ml-10 flex items-end'>
+              <div className='ml-10 flex items-end pb-2'>
                 <ButtonBox onClick={onClick} white />
               </div>
             </div>

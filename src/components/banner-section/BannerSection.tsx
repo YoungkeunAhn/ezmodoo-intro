@@ -18,7 +18,7 @@ function BannerSection() {
         autoplay={{ delay: 5000 }}
         speed={300}
         pagination={{ clickable: true }}
-        className='overflow-hidden'
+        className='w-full'
         style={{ height: 'calc(100vh - 124px)' }}
       >
         {banner.map((item, idx) => (
@@ -30,7 +30,7 @@ function BannerSection() {
                 alt='banner'
               />
               <div
-                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+                className='w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
                 dangerouslySetInnerHTML={{ __html: item.content }}
               ></div>
             </div>

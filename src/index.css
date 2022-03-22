@@ -31,3 +31,7 @@ code {
 .swiper-pagination-bullet-active {
   background: #ffd504 !important;
 }
+
+.swiper-pagination {
+  bottom: 70px !important;
+}

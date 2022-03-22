@@ -13,13 +13,13 @@ function CoupangSection() {
         ></h1>
         {coupang.parnassus.map((p, idx) => (
           <p
-            className='text-2xl mb-5 font-medium leading-loose'
+            className='text-2xl mb-5 font-medium leading-loose tracking-[-0.62px]'
             key={idx}
             dangerouslySetInnerHTML={{ __html: p }}
           ></p>
         ))}
         <div className='flex justify-between items-center mt-10 w-full'>
-          <div className='h-full flex flex-col justify-between items-center'>
+          <div className='w-full h-full flex flex-col justify-between items-center ml-5'>
             {coupang.itemList.map(
               (item, idx) =>
                 idx < 5 && (
@@ -31,8 +31,12 @@ function CoupangSection() {
                 )
             )}
           </div>
-          <img src='coupang_img.png' alt='coupang monitor' width={350} />
-          <div className='h-full flex flex-col justify-between items-center'>
+          <img
+            src='coupang_img.png'
+            alt='coupang monitor'
+            className='w-1/3 ml-10 mr-10'
+          />
+          <div className='w-full flex flex-col justify-between items-center space-y-3'>
             {coupang.itemList.map(
               (item, idx) =>
                 idx > 4 && (

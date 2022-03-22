@@ -17,12 +17,12 @@ function SellerSection() {
       <Container noBg>
         <div className='flex flex-col items-center'>
           <h1
-            className='text-5xl font-bold mb-10 text-center leading-relaxed'
+            className='text-5xl font-bold mb-14 text-center leading-relaxed'
             dangerouslySetInnerHTML={{ __html: sellerEasy.title }}
           ></h1>
 
           <p
-            className='text-2xl max-w-4xl leading-10 mb-5'
+            className='text-2xl leading-relaxed mb-16'
             dangerouslySetInnerHTML={{ __html: sellerEasy.subTitle }}
           ></p>
           <ButtonBox onClick={onClick} />
