@@ -64,10 +64,9 @@ export const sellerEasy = {
 }
 
 export const fulfillment = {
-  icon: '',
+  icon: 'fulfillment_icon.png',
   title: '풀필먼트/물류대행',
   text: `온라인 판매에 필요한 모든 물류처리 과정을 통합 대행합니다.<br />고객사의 상품보관, 주문수집, 포장배송, 송장전송 등을 신속정확하게 처리하는 모두편해 물류시스템의 특화기술입니다.`,
-  image: '',
 }
 
 export const fulfillmentCard = [

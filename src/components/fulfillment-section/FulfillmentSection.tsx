@@ -31,7 +31,7 @@ function FulfillmentSection() {
                   </div>
                   <div className='flex'>
                     <img
-                      src='fulfillment_icon.png'
+                      src={fulfillment.icon}
                       alt='fulfillment icon'
                       className='object-contain mr-3'
                       width={50}
