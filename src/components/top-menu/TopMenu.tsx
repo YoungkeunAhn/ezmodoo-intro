@@ -58,7 +58,7 @@ function TopMenu() {
 
         {/* 서브메뉴 */}
         <div
-          className='w-full flex justify-center absolute z-50 border-t-2 overflow-hidden border-[#7FA2C2]'
+          className='w-full flex justify-center absolute z-50 border-t-2 border-b overflow-hidden border-[#7FA2C2]'
           style={{
             transition: 'all 0.5s',
             height: topMenuOver ? '35vh' : 0,
