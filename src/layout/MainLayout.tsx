@@ -1,3 +1,4 @@
+import ScrollTopBtn from 'common/sroll-top-btn/ScrollTopBtn'
 import TopMenu from 'components/top-menu/TopMenu'
 import React from 'react'
 
@@ -12,6 +13,7 @@ function MainLayout(props: Props) {
     <div>
       <TopMenu />
       <main>{children}</main>
+      <ScrollTopBtn />
     </div>
   )
 }

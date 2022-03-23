@@ -33,7 +33,7 @@ function LoginBox(props: Props) {
         open ? 'opacity-100' : 'opacity-0 hidden'
       }`}
     >
-      <div className='bg-[#7FA2C2] flex justify-center items-center rounded-t-2xl p-3'>
+      <div className='bg-[#7FA2C2] flex justify-center items-center rounded-t-[10px] p-3'>
         <img
           src='white_logo.png'
           alt='white logo'
@@ -41,7 +41,7 @@ function LoginBox(props: Props) {
           className='ml-5'
         />
       </div>
-      <div className='bg-[#F4F5F8] flex flex-col items-center p-10'>
+      <div className='bg-white flex flex-col items-center p-5 pl-10 pr-10 w-[25rem] box-border'>
         <h1 className='font-bold text-2xl'>로그인</h1>
         <span className='text-sm mt-2 text-gray-400'>
           도메인, 사용자아이디, 비밀번호를 입력하세요.
@@ -94,7 +94,7 @@ function LoginBox(props: Props) {
         </div>
       </div>
       <div
-        className='bg-[#7FA2C2] flex justify-center items-center p-3 rounded-b-2xl text-xl hover:cursor-pointer hover:text-[1.3rem]'
+        className='bg-[#7FA2C2] flex justify-center items-center p-3 rounded-b-[10px] text-xl hover:cursor-pointer hover:text-[1.3rem]'
         onClick={onLogin}
       >
         <span className='text-white font-bold'>Login</span>
