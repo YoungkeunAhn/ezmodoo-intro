@@ -129,11 +129,8 @@ function TopMenu() {
               >
                 {menu.subTitle.length !== 0 &&
                   menu.subTitle.map((sub, idx) => (
-                    <Link to={sub.url}>
-                      <div
-                        className='box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'
-                        key={idx}
-                      >
+                    <Link to={sub.url} key={idx}>
+                      <div className='box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'>
                         {sub.title === '전체서비스' && (
                           <span>
                             <PlusCircle />

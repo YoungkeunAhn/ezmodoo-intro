@@ -22,8 +22,8 @@ function BannerSection() {
         style={{ height: 'calc(100vh - 124px)' }}
       >
         {banner.map((item, idx) => (
-          <SwiperSlide>
-            <div className='w-full h-full relative' key={idx}>
+          <SwiperSlide key={idx}>
+            <div className='w-full h-full relative'>
               <img
                 className='w-full h-full m-auto object-cover'
                 src={item.image}

@@ -14,7 +14,7 @@ function CoupangContent() {
       ))}
 
       <div className='flex justify-between items-center mt-10 w-full'>
-        <div className='w-full h-full flex flex-col justify-between items-center space-y-3'>
+        <div className='w-full h-full flex flex-col justify-between items-center space-y-5'>
           {coupang.itemList.map(
             (item, idx) =>
               idx < 5 && (
@@ -25,9 +25,9 @@ function CoupangContent() {
         <img
           src='coupang_img.png'
           alt='coupang monitor'
-          className='w-1/3 ml-10 mr-10'
+          className='w-1/2 ml-10 mr-10'
         />
-        <div className='w-full flex flex-col justify-between items-center space-y-3'>
+        <div className='w-full flex flex-col justify-between items-center space-y-5'>
           {coupang.itemList.map(
             (item, idx) =>
               idx > 4 && (

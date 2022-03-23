@@ -1,3 +1,4 @@
+import Footer from 'components/footer/Footer'
 import TopMenu from 'components/top-menu/TopMenu'
 import React from 'react'
 
@@ -31,6 +32,7 @@ function PageLayout(props: Props) {
           {children}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
