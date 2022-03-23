@@ -29,7 +29,7 @@ export const topMenu: MenuType[] = [
   {
     title: '서비스신청',
     subTitle: [
-      { title: '요금안내', url: '' },
+      { title: '요금안내', url: '/charge-infomation' },
       { title: '가입절차안내', url: '' },
     ],
   },

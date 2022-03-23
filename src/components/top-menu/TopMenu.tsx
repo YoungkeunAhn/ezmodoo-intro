@@ -2,6 +2,7 @@ import PlusCircle from 'asset/PlusCircle'
 import LoginBox from 'common/login-box/LoginBox'
 import { headerContent, topMenu } from 'data/top-menu'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function TopMenu() {
   const [loginOpen, setLoginOpen] = useState<boolean>(false)
@@ -46,7 +47,9 @@ function TopMenu() {
         {/* 메인메뉴 */}
         <ul className='flex justify-center items-center p-3 bg-white hover:cursor-pointer max-w-[1350px] m-auto space-x-4 relative'>
           <li className='w-full flex justify-center'>
-            <img src='logo.png' alt='logo' className='h-7' />
+            <Link to='/'>
+              <img src='logo.png' alt='logo' className='h-7' />
+            </Link>
           </li>
           {topMenu.map((menu, idx) => (
             <li
@@ -126,17 +129,19 @@ function TopMenu() {
               >
                 {menu.subTitle.length !== 0 &&
                   menu.subTitle.map((sub, idx) => (
-                    <div
-                      className='box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'
-                      key={idx}
-                    >
-                      {sub.title === '전체서비스' && (
-                        <span>
-                          <PlusCircle />
-                        </span>
-                      )}
-                      {sub.title}
-                    </div>
+                    <Link to={sub.url}>
+                      <div
+                        className='box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'
+                        key={idx}
+                      >
+                        {sub.title === '전체서비스' && (
+                          <span>
+                            <PlusCircle />
+                          </span>
+                        )}
+                        {sub.title}
+                      </div>
+                    </Link>
                   ))}
               </li>
             ))}

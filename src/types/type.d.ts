@@ -15,5 +15,18 @@ declare type BannerType = {
 
 declare type PageType = {
   title: string
+  bgImage: string
+  engTitle: string
+  summary: string
+}
+
+declare type ChargeInfoCardType = {
+  type: 'simple' | 'basic' | 'pro' | 'premium'
+  price: string
+  content: string[]
+}
+
+declare type ChargeInfoDiscount = {
+  mounth: number
   image: string
 }
