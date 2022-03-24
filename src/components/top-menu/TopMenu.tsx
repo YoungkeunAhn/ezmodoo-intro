@@ -48,7 +48,7 @@ function TopMenu() {
         <ul className='flex justify-center items-center p-3 bg-white hover:cursor-pointer max-w-[1350px] m-auto space-x-4 relative'>
           <li className='w-full flex justify-center'>
             <Link to='/'>
-              <img src='logo.png' alt='logo' className='h-7' />
+              <img src='logo.png' alt='모두편해' className='h-7' />
             </Link>
           </li>
           {topMenu.map((menu, idx) => (

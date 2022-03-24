@@ -1,4 +1,4 @@
-import ScrollToTop from 'common/ScrollToTop'
+import ScrollToTop from 'common/sroll-top-btn/ScrollToTop'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'

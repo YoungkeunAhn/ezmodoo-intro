@@ -1,3 +1,4 @@
+import ExperienceBtn from 'common/experience-btn/ExperienceBtn'
 import ChargeInfoBasicService from 'components/charge-infomation/basic-service/ChargeInfoBasicService'
 import ChargeInfomationCardForm from 'components/charge-infomation/card-form/ChargeInfomationCardForm'
 import DiscountItemBox from 'components/charge-infomation/discount-item-box/DiscountItemBox'
@@ -29,9 +30,7 @@ function ChargeInfomation() {
           ))}
         </div>
         <ChargeInfoBasicService />
-        <div className='text-5xl font-bold text-white bg-[#294551] py-10 flex justify-center items-center w-[50rem] m-auto rounded-[200px] mt-20 cursor-pointer hover:bg-[#3d687a] transition-[0.3s]'>
-          <span>1개월 무료체험 신청하기</span>
-        </div>
+        <ExperienceBtn />
       </div>
     </PageLayout>
   )

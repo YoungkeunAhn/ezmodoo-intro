@@ -15,7 +15,9 @@ function PageLayout(props: Props) {
   return (
     <div>
       <TopMenu />
-      <div style={{ background: `url(${bgImage})` }}>
+      <div
+        style={{ background: `url(${bgImage})`, backgroundRepeat: 'no-repeat' }}
+      >
         <div className='max-w-[1150px] flex items-center justify-start m-auto h-96'>
           <h1 className='text-5xl font-bold text-white'>{title}</h1>
         </div>
@@ -27,9 +29,10 @@ function PageLayout(props: Props) {
             <h2 className='text-5xl font-bold text-center mt-5 mb-16'>
               {title}
             </h2>
-            <div className='text-[#777] text-2xl text-center m-14'>
-              {summary}
-            </div>
+            <div
+              className='text-[#777] text-2xl text-center m-14'
+              dangerouslySetInnerHTML={{ __html: summary }}
+            ></div>
           </div>
           {children}
         </div>
