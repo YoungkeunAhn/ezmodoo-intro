@@ -1,3 +1,4 @@
+import ScrollTopBtn from 'common/sroll-top-btn/ScrollTopBtn'
 import Footer from 'components/footer/Footer'
 import TopMenu from 'components/top-menu/TopMenu'
 import React from 'react'
@@ -10,6 +11,7 @@ type Props = {
 function PageLayout(props: Props) {
   const { children, header } = props
   const { title, engTitle, summary, bgImage } = header
+
   return (
     <div>
       <TopMenu />
@@ -33,6 +35,7 @@ function PageLayout(props: Props) {
         </div>
       </div>
       <Footer />
+      <ScrollTopBtn />
     </div>
   )
 }

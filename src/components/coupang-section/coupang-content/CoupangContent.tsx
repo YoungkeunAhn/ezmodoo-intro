@@ -25,7 +25,7 @@ function CoupangContent() {
         <img
           src='coupang_img.png'
           alt='coupang monitor'
-          className='w-1/2 ml-10 mr-10'
+          className='w-[29rem] ml-10 mr-10'
         />
         <div className='w-full flex flex-col justify-between items-center space-y-5'>
           {coupang.itemList.map(
