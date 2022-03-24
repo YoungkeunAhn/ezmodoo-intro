@@ -8,8 +8,11 @@ function ChargeInfomationCardForm(props: Props) {
   const { data } = props
   const { type, price, content } = data
   return (
-    <div className='w-full'>
-      <div className='bg-[#39668F] shadow py-5 rounded-t-[10px]'>
+    <div
+      className='w-full rounded-t-[10px] rounded-b-[10px]'
+      style={{ boxShadow: '5px 5px 1px #ddd' }}
+    >
+      <div className='bg-[#39668F] shadow py-4 rounded-t-[10px]'>
         <h4 className='text-white font-bold text-3xl uppercase text-center'>
           {type}
         </h4>
@@ -30,8 +33,8 @@ function ChargeInfomationCardForm(props: Props) {
           ))}
         </ul>
       </div>
-      <div className='bg-[#39668F] py-5 flex justify-center items-center rounded-b-[10px]'>
-        <span className='bg-white text-[#39668F] rounded-[40px] py-3 w-32 font-bold text-lg text-center'>
+      <div className='bg-[#39668F] py-4 flex justify-center items-center rounded-b-[10px]'>
+        <span className='bg-white text-[#39668F] rounded-[40px] py-2 w-32 font-bold text-lg text-center'>
           시작하기
         </span>
       </div>
