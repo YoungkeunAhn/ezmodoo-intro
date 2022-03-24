@@ -1,9 +1,19 @@
 import DataInputBox from 'common/data-input-box/DataInputBox'
-import { questionSubmitMsg } from 'data/alert-msg'
+import {
+  questionCheckErrorMsg,
+  questionSubmitMsg,
+  questionTextNullMsg,
+} from 'data/alert-msg'
 import { questionPageHeader } from 'data/page'
 import DataInputLayout from 'layout/DataInputLayout'
 import PageLayout from 'layout/PageLayout'
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
+import {
+  checkEmail,
+  checkKorName,
+  checkNullText,
+  checkNum,
+} from 'validation/textCheck'
 
 type InputsType = {
   company: string
@@ -25,6 +35,8 @@ const initInputs: InputsType = {
 
 function Question() {
   const [inputs, setInputs] = useState<InputsType>(initInputs)
+  const [check, setCheck] = useState<boolean>(false)
+  const [valiArr, setValiArr] = useState<string[]>([])
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputs({ ...inputs, [event.target.name]: event.target.value })
@@ -34,9 +46,50 @@ function Question() {
     setInputs({ ...inputs, [event.target.name]: event.target.value })
   }
 
+  const validation = useCallback(() => {
+    if (checkNullText(inputs).length !== 0) {
+      alert(questionTextNullMsg)
+      setValiArr(checkNullText(inputs))
+      return false
+    }
+
+    if (!check) {
+      alert(questionCheckErrorMsg)
+      return false
+    }
+
+    if (!checkKorName(inputs.name)) {
+      setValiArr(['name'])
+      return false
+    }
+
+    if (!checkNum(inputs.companyCallNum)) {
+      setValiArr(['companyCallNum'])
+      return false
+    }
+
+    if (!checkNum(inputs.phoneNum)) {
+      setValiArr(['phoneNum'])
+      return false
+    }
+
+    if (!checkEmail(inputs.email)) {
+      setValiArr(['email'])
+      return false
+    }
+
+    return true
+  }, [check, inputs])
+
   const onSubmit = () => {
+    if (!validation()) {
+      return false
+    }
+
     alert(questionSubmitMsg)
     setInputs(initInputs)
+    setCheck(false)
+    setValiArr([])
   }
 
   return (
@@ -59,12 +112,14 @@ function Question() {
                 name='company'
                 value={inputs.company}
                 onChange={onChange}
+                errorCheck={valiArr.includes('company')}
               />
               <DataInputBox
                 label='담당자명'
                 name='name'
                 value={inputs.name}
                 onChange={onChange}
+                errorCheck={valiArr.includes('name')}
               />
             </div>
             <div className='flex items-center space-x-10'>
@@ -73,12 +128,16 @@ function Question() {
                 name='companyCallNum'
                 value={inputs.companyCallNum}
                 onChange={onChange}
+                errorCheck={valiArr.includes('companyCallNum')}
+                placeholder='-를 빼고 입력해주세요'
               />
               <DataInputBox
                 label='휴대폰번호'
                 name='phoneNum'
                 value={inputs.phoneNum}
                 onChange={onChange}
+                errorCheck={valiArr.includes('phoneNum')}
+                placeholder='-를 빼고 입력해주세요'
               />
             </div>
             <div>
@@ -87,6 +146,7 @@ function Question() {
                 name='email'
                 value={inputs.email}
                 onChange={onChange}
+                errorCheck={valiArr.includes('email')}
                 smLableWidth
               />
             </div>
@@ -96,10 +156,26 @@ function Question() {
                 name='content'
                 value={inputs.content}
                 multiLine
+                errorCheck={valiArr.includes('content')}
                 rows={10}
                 onChangeTextarea={onChangeTextarea}
                 smLableWidth
               />
+            </div>
+            <div className='flex justify-center items-center text-[#666]'>
+              <input
+                type='checkbox'
+                className='mr-2'
+                checked={check}
+                onChange={(e) => setCheck(e.target.checked)}
+              />
+              <span
+                className='cursor-pointer mr-3'
+                onClick={() => setCheck(!check)}
+              >
+                개인정보 취급방침에 동의
+              </span>
+              <span className='cursor-pointer'>[자세히보기]</span>
             </div>
           </div>
         </DataInputLayout>

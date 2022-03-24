@@ -7,9 +7,11 @@ type Props = {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
   onChangeTextarea?: (evnet: React.ChangeEvent<HTMLTextAreaElement>) => void
 
+  placeholder?: string
   smLableWidth?: true
   multiLine?: true
   rows?: number
+  errorCheck: boolean
 }
 
 function DataInputBox(props: Props) {
@@ -20,6 +22,8 @@ function DataInputBox(props: Props) {
     multiLine,
     rows,
     smLableWidth,
+    errorCheck,
+    placeholder,
     onChange,
     onChangeTextarea,
   } = props
@@ -37,7 +41,9 @@ function DataInputBox(props: Props) {
       {multiLine ? (
         <textarea
           id={name}
-          className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8]'
+          className={`form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8] ${
+            errorCheck && 'border-rose-400'
+          }`}
           name={name}
           value={value}
           onChange={onChangeTextarea}
@@ -46,11 +52,15 @@ function DataInputBox(props: Props) {
       ) : (
         <input
           id={name}
-          className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8]'
+          className={`form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8] ${
+            errorCheck && 'border-rose-400'
+          }`}
           name={name}
           value={value}
           onChange={onChange}
           type={name === 'email' ? 'email' : 'text'}
+          placeholder={placeholder}
+          required
         />
       )}
     </div>
