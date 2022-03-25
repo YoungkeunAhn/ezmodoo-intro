@@ -1,6 +1,6 @@
-import ServiceAcceptTerms from 'components/service-accept-terms/ServiceAcceptTerms'
-import UserInfoAcceptTerms from 'components/user-info-accept-terms/UserInfoAcceptTerms'
 import React from 'react'
+import ServiceAcceptTerms from './service-accept-terms/ServiceAcceptTerms'
+import UserInfoAcceptTerms from './user-info-accept-terms/UserInfoAcceptTerms'
 
 type Props = {
   checkList: string[]
