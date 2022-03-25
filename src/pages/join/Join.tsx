@@ -1,7 +1,5 @@
 import DataInputBox from 'common/data-input-box/DataInputBox'
 import JoinAcceptTerms from 'components/join-accept-terms-box/JoinAcceptTerms'
-import ServiceAcceptTerms from 'components/service-accept-terms/ServiceAcceptTerms'
-import UserInfoAcceptTerms from 'components/user-info-accept-terms/UserInfoAcceptTerms'
 import {
   doubleCheckErrorMsg,
   inputDataNullMsg,

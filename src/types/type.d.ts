@@ -46,3 +46,24 @@ declare type UserInfoAcceptTermsType = {
   content: Array<{ title: string; content: string }>
   required: boolean
 }
+
+declare type FaqContentType = {
+  id: string
+  category: Omit<FaqCategoryId, 'All'>
+  question: string
+  answer: string
+}
+type FaqCategoryId =
+  | 'All'
+  | 'Site'
+  | 'Error'
+  | 'Service'
+  | 'Extra'
+  | 'Policy'
+  | 'Setting'
+
+declare type FaqCategoryType = {
+  cateId: FaqCategoryId
+  icon: string
+  cateName: string
+}
