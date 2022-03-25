@@ -67,3 +67,10 @@ declare type FaqCategoryType = {
   icon: string
   cateName: string
 }
+
+declare type ExtraPageType = {
+  title: string
+  cardList: Array<{ title: string; text: string }>
+  image: string
+  step: string[]
+}
