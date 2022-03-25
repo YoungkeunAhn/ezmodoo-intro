@@ -1,8 +1,9 @@
+import { SearchOptionType } from 'pages/faq/Faq'
 import React from 'react'
 
 type Props = {
   item: FaqCategoryType
-  searchOption: FaqCategoryId
+  searchOption: SearchOptionType
   onClick: (cateId: FaqCategoryId) => void
 }
 
@@ -13,7 +14,9 @@ function FaqSearchCategoryItemBtn(props: Props) {
   return (
     <button
       className={`flex flex-1 flex-col items-center p-4 rounded-2xl cursor-pointer h-[10rem] border ${
-        searchOption === cateId ? 'bg-[#ccc] ' : 'bg-white text-[#31415E]'
+        searchOption.cateId === cateId
+          ? 'bg-[#ccc] '
+          : 'bg-white text-[#31415E]'
       }`}
       onClick={() => onClick(cateId)}
     >

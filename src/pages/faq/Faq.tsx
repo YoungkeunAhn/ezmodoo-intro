@@ -5,24 +5,34 @@ import { faqPageHeader } from 'data/page'
 import PageLayout from 'layout/PageLayout'
 import React, { useState } from 'react'
 
+export type SearchOptionType = {
+  cateId: FaqCategoryId
+  text: string
+}
+
 function Faq() {
+  const [openList, setOpenList] = useState<string[]>([])
+  const [searchOption, setSearchOption] = useState<SearchOptionType>({
+    cateId: 'All',
+    text: '',
+  })
+  const [currentPage, setCurrentPage] = useState<number>(1)
   const [faqContentList, setFaqContentList] =
     useState<FaqContentType[]>(faqList)
 
-  const [openList, setOpenList] = useState<string[]>([])
-
-  const [searchOption, setSearchOption] = useState<FaqCategoryId>('All')
-
   const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSearchOption(event.target.value as FaqCategoryId)
+    setSearchOption({
+      ...searchOption,
+      cateId: event.target.value as FaqCategoryId,
+    })
   }
 
   const onClickItemBtn = (cateId: FaqCategoryId) => {
-    setSearchOption(cateId)
+    setSearchOption({ ...searchOption, cateId })
   }
 
   const onSearch = (text: string) => {
-    console.log(text)
+    setSearchOption({ ...searchOption, text })
   }
 
   const onClickOpenContent = (contentId: string) => {
@@ -31,6 +41,10 @@ function Faq() {
     } else {
       setOpenList(openList.concat(contentId))
     }
+  }
+
+  const onClickPageNav = (page: number) => {
+    setCurrentPage(page)
   }
 
   return (
@@ -45,8 +59,10 @@ function Faq() {
         <FaqContentList
           faqContentList={faqContentList}
           openList={openList}
-          onClick={onClickOpenContent}
-          currentPage={1}
+          currentPage={currentPage}
+          onClickOpenContent={onClickOpenContent}
+          onClickPageNav={onClickPageNav}
+          searchOption={searchOption}
         />
       </div>
     </PageLayout>

@@ -1,9 +1,10 @@
 import { faqSearchCategory } from 'data/faq'
+import { SearchOptionType } from 'pages/faq/Faq'
 import React, { useState } from 'react'
 import FaqSearchCategoryItemBtn from './item-btn/FaqSearchCategoryItemBtn'
 
 type Props = {
-  searchOption: FaqCategoryId
+  searchOption: SearchOptionType
   onClick: (cateId: FaqCategoryId) => void
   onSearch: (text: string) => void
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void
@@ -34,7 +35,7 @@ function FaqSearchCategory(props: Props) {
         <div className='w-3/4 flex space-x-2 '>
           <select
             className='border rounded-[4px] px-2'
-            value={searchOption}
+            value={searchOption.cateId}
             onChange={onChange}
           >
             {faqSearchCategory.map((item, idx) => (
@@ -44,7 +45,7 @@ function FaqSearchCategory(props: Props) {
             ))}
           </select>
           <input
-            className='border rounded-[4px] w-full'
+            className='border rounded-[4px] w-full px-4'
             type='text'
             value={searchText}
             onChange={onChangeSearchText}
