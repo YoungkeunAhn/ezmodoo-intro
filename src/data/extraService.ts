@@ -18,7 +18,8 @@ export const extraChinaImport: ExtraPageType = {
       text: '한국으로 상품 발송전 상품의 기본검수 및 라벨링, 재포장 등의 작업을 대행해드립니다.',
     },
   ],
-  image: '',
+  image: 'extra_text.png',
+  color: '#39668F',
   step: [
     `대행신청 : 중국사이트에서 원하는 상품을 찾은 후 대행신청작성`,
     `구매가능여부 확인 : 해당상품의 수입이 가능한지 확인 후 고객님께 답변`,
@@ -49,7 +50,8 @@ export const extraDesign: ExtraPageType = {
       text: '시안컴토 후 피드백을 전달해주세요. 초안 수령 후 수정은 총 2회까지 가능합니다.',
     },
   ],
-  image: '',
+  image: 'extra_text.png',
+  color: '#51248E',
   step: [
     `작업은 결제 확인 후 익일부터 진행되며, 원하는 컨셉과 레퍼런스를 전달해 주시면 작업이 수월합니다.`,
     `의뢰 목적에 한해서 상업적 이용이 가능하며, 목적외의 용도로 상업적 사용을 하거나 작업물 내에 이용된 유료이미지를 2차 가공할 경우 저작권법에 위반될 수 있습니다.`,
@@ -83,7 +85,8 @@ export const extraForward: ExtraPageType = {
       text: '주문정보, 주문수집, 송장업데이트가 자동으로 수집 및 업데이트 되어 일손이 줄어듭니다.',
     },
   ],
-  image: '',
+  image: 'extra_text.png',
+  color: '#0F7D8A',
   step: [
     `온라인 쇼핑몰에서 판매되는 다양한 상품의 물류대행을 진행하고 있습니다.`,
     `쿠팡셀러를 위한 맞춤형 물류 솔루션으로 풀필먼트 서비스를 제공합니다.`,
