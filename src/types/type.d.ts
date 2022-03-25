@@ -3,7 +3,7 @@ declare type MenuType = {
   subTitle: SubTitleType[]
 }
 
-declare type SubTitleType = {
+type SubTitleType = {
   title: string
   url: string
 }
@@ -26,7 +26,23 @@ declare type ChargeInfoCardType = {
   content: string[]
 }
 
-declare type ChargeInfoDiscount = {
+declare type ChargeInfoDiscountType = {
   mounth: number
   image: string
+}
+
+type ServiceAcceptContentType = {
+  title: string
+  subContent: Array<{ subTitle: string; content: string }>
+}
+declare type SeviceAcceptTermsType = {
+  mainTitle: string
+  content: Array<ServiceAcceptContentType>
+  required: boolean
+}
+
+declare type UserInfoAcceptTermsType = {
+  mainTitle: string
+  content: Array<{ title: string; content: string }>
+  required: boolean
 }

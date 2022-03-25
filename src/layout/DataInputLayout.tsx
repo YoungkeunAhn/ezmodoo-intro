@@ -15,7 +15,7 @@ function DataInputLayout(props: Props) {
       <main className='bg-white flex justify-center items-center py-20'>
         <div className='max-w-[54rem]'>{children}</div>
       </main>
-      <footer className='bg-[#39668F] h-[6rem] rounded-b-xl flex justify-center items-center text-[#39668F] font-bold text-2xl'>
+      <footer className='bg-[#39668F] h-[6rem] rounded-b-xl flex justify-center items-center text-[#39668F] font-bold text-2xl text-center'>
         {button}
       </footer>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 type Props = {
-  data: ChargeInfoDiscount
+  data: ChargeInfoDiscountType
 }
 function DiscountItemBox(props: Props) {
   const { data } = props

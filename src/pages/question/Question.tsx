@@ -1,8 +1,8 @@
 import DataInputBox from 'common/data-input-box/DataInputBox'
 import {
   questionCheckErrorMsg,
-  questionSubmitMsg,
-  questionTextNullMsg,
+  successQuestiontMsg,
+  inputDataNullMsg,
 } from 'data/alert-msg'
 import { questionPageHeader } from 'data/page'
 import DataInputLayout from 'layout/DataInputLayout'
@@ -46,9 +46,9 @@ function Question() {
     setInputs({ ...inputs, [event.target.name]: event.target.value })
   }
 
-  const validation = useCallback(() => {
+  const validate = useCallback(() => {
     if (checkNullText(inputs).length !== 0) {
-      alert(questionTextNullMsg)
+      alert(inputDataNullMsg)
       setValiArr(checkNullText(inputs))
       return false
     }
@@ -81,12 +81,13 @@ function Question() {
     return true
   }, [check, inputs])
 
-  const onSubmit = () => {
-    if (!validation()) {
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    if (!validate()) {
       return false
     }
 
-    alert(questionSubmitMsg)
+    alert(successQuestiontMsg)
     setInputs(initInputs)
     setCheck(false)
     setValiArr([])
@@ -94,12 +95,12 @@ function Question() {
 
   return (
     <PageLayout header={questionPageHeader}>
-      <div>
+      <form onSubmit={(e) => onSubmit(e)}>
         <DataInputLayout
           button={
             <button
-              className='bg-white w-40 text-center rounded-3xl py-2 hover:bg-[#eee] cursor-pointer font-bold'
-              onClick={onSubmit}
+              type='submit'
+              className='bg-white w-40 rounded-3xl py-2 hover:bg-[#eee] cursor-pointer'
             >
               문의하기
             </button>
@@ -179,7 +180,7 @@ function Question() {
             </div>
           </div>
         </DataInputLayout>
-      </div>
+      </form>
     </PageLayout>
   )
 }

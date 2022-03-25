@@ -86,9 +86,11 @@ function TopMenu() {
               return false
             }}
           >
-            <button className='inline-block px-6 py-2.5 bg-[#7FA2C2] text-white font-medium text-md leading-tight uppercase rounded-[40px] shadow-md hover:bg-[#6286A7] hover:shadow-lg focus:bg-[#6286A7] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#6286A7] active:shadow-lg transition duration-150 ease-in-out'>
-              무료체험신청
-            </button>
+            <Link to='/join'>
+              <button className='inline-block px-6 py-2.5 bg-[#7FA2C2] text-white font-medium text-md leading-tight uppercase rounded-[40px] shadow-md hover:bg-[#6286A7] hover:shadow-lg focus:bg-[#6286A7] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#6286A7] active:shadow-lg transition duration-150 ease-in-out'>
+                무료체험신청
+              </button>
+            </Link>
           </li>
           <div
             onMouseOver={(e) => {
