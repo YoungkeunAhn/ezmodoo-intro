@@ -73,5 +73,5 @@ declare type ExtraPageType = {
   cardList: Array<{ title: string; text: string }>
   image: string
   color: string
-  step: string[]
+  stepList: string[]
 }
