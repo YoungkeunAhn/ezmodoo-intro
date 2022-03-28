@@ -2,7 +2,7 @@ import { ChinaImportPageHeader } from 'data/page'
 import PageLayout from 'layout/PageLayout'
 import React from 'react'
 
-function ChinaImport() {
+function ExtraChinaImport() {
   return (
     <PageLayout header={ChinaImportPageHeader}>
       <div></div>
@@ -10,4 +10,4 @@ function ChinaImport() {
   )
 }
 
-export default ChinaImport
+export default ExtraChinaImport

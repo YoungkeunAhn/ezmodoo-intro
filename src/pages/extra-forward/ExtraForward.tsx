@@ -2,7 +2,7 @@ import { forwardPageHeader } from 'data/page'
 import PageLayout from 'layout/PageLayout'
 import React from 'react'
 
-function Forward() {
+function ExtraForward() {
   return (
     <PageLayout header={forwardPageHeader}>
       <div></div>
@@ -10,4 +10,4 @@ function Forward() {
   )
 }
 
-export default Forward
+export default ExtraForward

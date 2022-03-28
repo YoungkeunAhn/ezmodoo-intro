@@ -4,7 +4,7 @@ import ExtraPageLayout from 'layout/ExtraPageLayout'
 import PageLayout from 'layout/PageLayout'
 import React from 'react'
 
-function DirectDesign() {
+function ExtraDesign() {
   return (
     <PageLayout header={designPageHeader}>
       <ExtraPageLayout data={extraDesign} />
@@ -12,4 +12,4 @@ function DirectDesign() {
   )
 }
 
-export default DirectDesign
+export default ExtraDesign

@@ -1,10 +1,10 @@
 import AccessionStep from 'pages/accession-step/AccessionStep'
 import ChargeInfomation from 'pages/charge-infomation/ChargeInfomation'
-import ChinaImport from 'pages/china-import/ChinaImport'
-import DirectDesign from 'pages/direct-design/DirectDesign'
+import ExtraChinaImport from 'pages/extra-china-import/ExtraChinaImport'
+import ExtraDesign from 'pages/extra-design/ExtraDesign'
 import Error404 from 'pages/error404/Error404'
 import Faq from 'pages/faq/Faq'
-import Forward from 'pages/forward/Forward'
+import ExtraForward from 'pages/extra-forward/ExtraForward'
 import Join from 'pages/join/Join'
 import Main from 'pages/main/Main'
 import Notice from 'pages/notice/Notice'
@@ -19,9 +19,9 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='/charge-infomation' element={<ChargeInfomation />} />
         <Route path='/accession-step' element={<AccessionStep />} />
-        <Route path='/design' element={<DirectDesign />} />
-        <Route path='/china-import' element={<ChinaImport />} />
-        <Route path='/forward' element={<Forward />} />
+        <Route path='/design' element={<ExtraDesign />} />
+        <Route path='/china-import' element={<ExtraChinaImport />} />
+        <Route path='/forward' element={<ExtraForward />} />
         <Route path='/notice' element={<Notice />} />
         <Route path='/faq' element={<Faq />} />
         <Route path='/question' element={<Question />} />
