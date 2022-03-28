@@ -45,7 +45,7 @@ function TopMenu() {
         onMouseOut={() => setTopMenuOver(false)}
       >
         {/* 메인메뉴 */}
-        <ul className='flex justify-center items-center p-3 bg-white hover:cursor-pointer max-w-[1350px] m-auto space-x-4 relative'>
+        <ul className='flex justify-center items-center bg-white hover:cursor-pointer max-w-[1350px] m-auto relative'>
           <li className='w-full flex justify-center'>
             <Link to='/'>
               <img src='logo.png' alt='모두편해' className='h-7' />
@@ -54,7 +54,7 @@ function TopMenu() {
           {topMenu.map((menu, idx) => (
             <li
               key={idx}
-              className='flex justify-left items-center p-1 w-full'
+              className='flex justify-left items-center w-full px-1 py-4'
               onMouseOver={(e) => {
                 if (idx === topMenu.length - 1) {
                   e.stopPropagation()
@@ -64,7 +64,7 @@ function TopMenu() {
               }}
             >
               <div
-                className='text-lg font-bold ml-5 flex items-center justify-left'
+                className='text-lg font-bold ml-5 flex items-center justify-cetner text-center w-full'
                 onClick={() => menu.title === '로그인' && openLogin()}
               >
                 {menu.title === '로그인' && (
@@ -74,7 +74,7 @@ function TopMenu() {
                     className='object-contain mr-1'
                   />
                 )}
-                {menu.title}
+                <span className='w-full text-center'>{menu.title}</span>
               </div>
             </li>
           ))}
@@ -114,7 +114,7 @@ function TopMenu() {
           }}
         >
           <ul
-            className={`w-full flex justify-center align-top bg-white  duration-500 pt-2 pb-2 max-w-[1350px] space-x-4`}
+            className={`w-full flex justify-center align-top bg-white  duration-500 pt-2 pb-2 max-w-[1350px]`}
           >
             <li className='w-full'></li>
             {topMenu.map((menu, idx) => (
@@ -132,13 +132,17 @@ function TopMenu() {
                 {menu.subTitle.length !== 0 &&
                   menu.subTitle.map((sub, idx) => (
                     <Link to={sub.url} key={idx}>
-                      <div className='box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex'>
+                      <div
+                        className={`box-border text-sm ml-[24px] p-1 hover:cursor-pointer hover:font-bold hover:text-[#7FA2C2] hover:underline decoration-1 flex ${
+                          menu.title === '고객지원' ? 'pl-10' : 'pl-7'
+                        }`}
+                      >
                         {sub.title === '전체서비스' && (
                           <span>
                             <PlusCircle />
                           </span>
                         )}
-                        {sub.title}
+                        <span className='w-full'>{sub.title}</span>
                       </div>
                     </Link>
                   ))}
