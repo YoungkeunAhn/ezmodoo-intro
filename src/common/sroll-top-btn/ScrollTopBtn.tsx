@@ -6,7 +6,7 @@ function ScrollTopBtn() {
   }
   return (
     <div
-      className='fixed right-10 bottom-10 p-2 w-16 rounded-xl text-white bg-[#7FA2C2] text-sm text-center cursor-pointer font-bold z-50'
+      className='fixed right-0 bottom-10 p-2 w-16 rounded-l-3xl text-white bg-[#39668F] text-sm text-center cursor-pointer font-bold z-50'
       onClick={scrollTop}
     >
       TOP ↑
