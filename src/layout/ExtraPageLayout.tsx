@@ -42,6 +42,7 @@ function ExtraPageLayout(props: Props) {
               <div
                 dangerouslySetInnerHTML={{ __html: step }}
                 className='leading-10'
+                style={{ wordBreak: 'keep-all' }}
               ></div>
             </div>
           ))}
