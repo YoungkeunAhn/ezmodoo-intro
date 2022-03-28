@@ -16,8 +16,9 @@ function ExtraPageLayout(props: Props) {
           문의하기
         </button>
       }
+      extra
     >
-      <div>
+      <div className='flex flex-col items-left'>
         <h1 className='text-center font-bold text-2xl mb-14'>{title}</h1>
         <div className='mb-20'>
           <div className='relative flex flex-col'>
