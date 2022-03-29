@@ -1,7 +1,7 @@
+import DndableImgBox from 'common/dndable-img-box/DndableImgBox'
 import RequillEditor from 'common/requill-editor/RequillEditor'
 import BannerManageLayout from 'layout/BannerManageLayout'
 import React, { useCallback, useRef, useState } from 'react'
-import ReactQuill, { Quill } from 'react-quill'
 import { Link, useParams } from 'react-router-dom'
 
 type InputsType = {
@@ -136,28 +136,12 @@ function BannerEdit() {
                 onChange={onChangeInputImg}
                 hidden
               />
-              <div
-                className={`w-full h-[30rem] flex justify-center items-center rounded-md cursor-pointer ${
-                  !inputImg && 'border-dashed border-4 border-gray-500'
-                }`}
-                onClick={() => inputRef.current && inputRef.current.click()}
+              <DndableImgBox
                 onDragOver={onDragOver}
                 onDrop={onDrop}
-              >
-                <span className='w-full h-[30rem] text-center flex justify-center items-center'>
-                  {inputImg ? (
-                    <img
-                      src={inputImg}
-                      className='object-contain h-full m-auto'
-                      alt='upload'
-                    />
-                  ) : (
-                    <h1 className='text-4xl text-gray-400 font-bold'>
-                      여기를 클릭하거나 이미지를 드래그 해주세요.
-                    </h1>
-                  )}
-                </span>
-              </div>
+                inputImg={inputImg}
+                inputRef={inputRef}
+              />
             </td>
           </tr>
           <tr>
@@ -172,7 +156,7 @@ function BannerEdit() {
           </tr>
         </table>
 
-        <div className='flex w-full justify-end space-x-5'>
+        <div className='flex w-full justify-end space-x-5 my-10'>
           <button className='w-48 py-3 text-center border rounded-xl bg-green-500 text-white hover:bg-green-600'>
             저장
           </button>
