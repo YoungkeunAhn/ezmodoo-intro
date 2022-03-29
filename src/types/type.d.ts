@@ -8,11 +8,6 @@ type SubTitleType = {
   url: string
 }
 
-declare type BannerType = {
-  image: string
-  content: string
-}
-
 declare type PageType = {
   title: string
   bgImage: string
@@ -74,4 +69,11 @@ declare type ExtraPageType = {
   image: string
   color: string
   stepList: string[]
+}
+declare type BannerType = {
+  bannerId: string
+  title: string
+  active: boolean
+  image: string
+  content: string
 }

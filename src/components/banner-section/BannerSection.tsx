@@ -19,7 +19,7 @@ function BannerSection() {
         speed={300}
         pagination={{ clickable: true }}
         className='w-full'
-        style={{ height: 'calc(100vh - 124px)' }}
+        style={{ height: 'calc(100vh - 121px)' }}
       >
         {banner.map((item, idx) => (
           <SwiperSlide key={idx}>

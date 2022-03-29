@@ -3,7 +3,7 @@ export const chargeInfoCard: ChargeInfoCardType[] = [
     type: 'simple',
     price: '299,000',
     content: [
-      '2000건 주문수집건수',
+      '2,000건 주문수집건수',
       '5개 사용자ID',
       '광고관리 30건',
       '상품수정 송장전송 등 무제한',
@@ -13,7 +13,7 @@ export const chargeInfoCard: ChargeInfoCardType[] = [
     type: 'basic',
     price: '399,000',
     content: [
-      '4000건 주문수집건수',
+      '4,000건 주문수집건수',
       '10개 사용자ID',
       '광고관리 60건',
       '상품수정 송장전송 등 무제한',

@@ -11,6 +11,8 @@ import Notice from 'pages/notice/Notice'
 import Question from 'pages/question/Question'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import BannerManage from 'pages/banner-manage/BannerManage'
+import BannerEdit from 'pages/banner-edit/BannerEdit'
 
 function App() {
   return (
@@ -26,6 +28,9 @@ function App() {
         <Route path='/faq' element={<Faq />} />
         <Route path='/question' element={<Question />} />
         <Route path='/join' element={<Join />} />
+        <Route path='/banner-manage' element={<BannerManage />} />
+        <Route path='/banner-manage/edit' element={<BannerEdit />} />
+        <Route path='/banner-manage/edit/:id' element={<BannerEdit />} />
         <Route path='*' element={<Error404 />} />
       </Routes>
     </div>
