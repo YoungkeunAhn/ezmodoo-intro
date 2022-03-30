@@ -20,7 +20,6 @@ function RequillEditor(props: Props) {
   }
 
   const formats = [
-    //'font',
     'header',
     'bold',
     'italic',

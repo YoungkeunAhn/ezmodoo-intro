@@ -71,9 +71,10 @@ declare type ExtraPageType = {
   stepList: string[]
 }
 declare type BannerType = {
-  bannerId: string
+  id: string
   title: string
   active: boolean
   image: string
   content: string
+  order: number
 }

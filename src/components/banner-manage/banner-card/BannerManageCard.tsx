@@ -7,7 +7,7 @@ type Props = {
 
 function BannerManageCard(props: Props) {
   const { data } = props
-  const { title, bannerId, image, active } = data
+  const { title, id: bannerId, image, active } = data
 
   const onClick = () => {
     console.log(bannerId)
