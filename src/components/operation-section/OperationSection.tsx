@@ -6,6 +6,7 @@ function OperationSection() {
   return (
     <Container flexDirection='column'>
       <div>
+        <span>Special Solution</span>
         <h4 className='font-bold text-6xl text-center tracking-tight mb-6'>
           {operation.title}
         </h4>
