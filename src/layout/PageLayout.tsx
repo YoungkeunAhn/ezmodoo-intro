@@ -1,5 +1,6 @@
 import ScrollTopBtn from 'common/sroll-top-btn/ScrollTopBtn'
 import Footer from 'components/footer/Footer'
+import MTopMenu from 'components/m-top-menu/MTopMenu'
 import TopMenu from 'components/top-menu/TopMenu'
 import React from 'react'
 
@@ -14,7 +15,8 @@ function PageLayout(props: Props) {
 
   return (
     <div>
-      <TopMenu />
+      <TopMenu className='hidden lg:block' />
+      <MTopMenu className='block lg:hidden' />
       <div
         style={{ background: `url(${bgImage})`, backgroundRepeat: 'no-repeat' }}
       >

@@ -2,6 +2,7 @@ import ChevronDown from 'asset/ChevronDown'
 import ChevronUp from 'asset/ChevronUp'
 import { mTopMemu } from 'data/top-menu'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
   className?: string
@@ -52,12 +53,12 @@ function MTopMenu(props: Props) {
             transition: 'background .5s .5s ease-in-out',
           }}
         >
-          <div className='w-full flex-1 h-screen'></div>
+          <div className={`w-full flex-1 ${open ? 'h-screen' : 'h-0'}`}></div>
           <div
             className={`w-[300px] bg-[#F4F5F8] overflow-hidden ${
               open ? 'h-screen' : 'h-0'
             }`}
-            style={{ transition: 'height 1s ease-in-out' }}
+            style={{ transition: 'height .8s ease-in-out' }}
           >
             <ul className='flex flex-col space-y-5 p-5'>
               {mTopMemu.map((menu, idx) => (
@@ -79,7 +80,7 @@ function MTopMenu(props: Props) {
                   </div>
                   {menu.subTitle.length !== 0 && (
                     <ul
-                      className={`px-2 flex flex-col items-start overflow-hidden box-border ${
+                      className={`px-2 flex flex-col items-start overflow-hidden box-border space-y-2 ${
                         currentMenu === menu.title
                           ? 'h-auto py-2 opacity-100'
                           : 'h-0 py-0 opacity-0'
@@ -87,7 +88,9 @@ function MTopMenu(props: Props) {
                       style={{ transition: '.5s' }}
                     >
                       {menu.subTitle.map((sub, idx) => (
-                        <li key={idx}>{sub.title}</li>
+                        <Link to={sub.url} className='w-full'>
+                          <li key={idx}>{sub.title}</li>
+                        </Link>
                       ))}
                     </ul>
                   )}
