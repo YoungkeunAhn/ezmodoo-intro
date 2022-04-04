@@ -78,3 +78,9 @@ declare type BannerType = {
   content: string
   order: number
 }
+
+declare interface mBannerType extends BannerType {
+  button?: string
+  url?: string
+  bottomContent?: string
+}

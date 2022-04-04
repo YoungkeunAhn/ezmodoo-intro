@@ -4,7 +4,12 @@ import { headerContent, topMenu } from 'data/top-menu'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function TopMenu() {
+type Props = {
+  className?: string
+}
+
+function TopMenu(props: Props) {
+  const { className } = props
   const [loginOpen, setLoginOpen] = useState<boolean>(false)
 
   const openLogin = () => {
@@ -18,26 +23,30 @@ function TopMenu() {
 
   return (
     <>
-      <div className='p-5 bg-[#E3EAF1] relative flex justify-center border-b'>
-        <p className='text-[#888] text-sm'>{headerContent.title}</p>
-        <div className='flex justify-center items-center absolute right-[16%] space-x-2'>
-          {headerContent.icons.map((icon, idx) => (
-            <a href={icon.url} key={idx}>
-              <img
-                className={idx === 3 ? 'w-5 h-4' : 'w-5 h-5'}
-                src={icon.image}
-                alt={icon.alt}
-              />
-            </a>
-          ))}
-          <span className='text-xs text-gray-400'>
-            {headerContent.channelName}
-          </span>
+      <div className={className}>
+        <div
+          className={`p-5 bg-[#E3EAF1] relative flex justify-center border-b`}
+        >
+          <p className='text-[#888] text-sm'>{headerContent.title}</p>
+          <div className='flex justify-center items-center absolute right-[16%] space-x-2'>
+            {headerContent.icons.map((icon, idx) => (
+              <a href={icon.url} key={idx}>
+                <img
+                  className={idx === 3 ? 'w-5 h-4' : 'w-5 h-5'}
+                  src={icon.image}
+                  alt={icon.alt}
+                />
+              </a>
+            ))}
+            <span className='text-xs text-gray-400'>
+              {headerContent.channelName}
+            </span>
+          </div>
         </div>
       </div>
 
       <div
-        className='sticky top-0 z-50 w-full bg-white'
+        className={`sticky top-0 z-50 w-full bg-white ${className}`}
         onMouseOver={(e) => {
           e.stopPropagation()
           setTopMenuOver(true)
@@ -67,14 +76,16 @@ function TopMenu() {
                 className='text-lg font-bold ml-5 flex items-center justify-cetner text-center w-full'
                 onClick={() => menu.title === '로그인' && openLogin()}
               >
-                {menu.title === '로그인' && (
-                  <img
-                    src='login_icon.png'
-                    alt='login icon'
-                    className='object-contain mr-1'
-                  />
-                )}
-                <span className='w-full text-center'>{menu.title}</span>
+                <span className='w-full text-center flex justify-center items-center'>
+                  {menu.title === '로그인' && (
+                    <img
+                      src='login_icon.png'
+                      alt='login icon'
+                      className='object-contain'
+                    />
+                  )}
+                  {menu.title}
+                </span>
               </div>
             </li>
           ))}
