@@ -63,6 +63,13 @@ export const ees = {
   bottom: '하나로 이모든 업무와 처리가 가능합니다.',
 }
 
+export const mEes = {
+  title: '·EVERYONE ·EASY ·SIMPLE',
+  content:
+    '주문수집과 CS처리, 정산은 물론이고 매출통계와 광고효율성까지 챙겨요!',
+  bottom: '하나로 이모든 업무와 처리가 가능합니다.',
+}
+
 export const coupang = {
   title: `쿠팡셀러라면 꼭 필요한 통합솔루션<br /><span class="text-[#FF9600] font-bold">모두편해</span>를 소개합니다 `,
   parnassus: [
