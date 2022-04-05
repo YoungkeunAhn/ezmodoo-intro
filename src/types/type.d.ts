@@ -80,7 +80,12 @@ declare type BannerType = {
 }
 
 declare interface mBannerType extends BannerType {
-  button?: string
+  button?: {
+    title: string
+    border: string
+    color: string
+    radius: number
+  }
   url?: string
   bottomContent?: string
 }

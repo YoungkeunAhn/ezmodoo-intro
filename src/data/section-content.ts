@@ -30,6 +30,33 @@ export const operation = {
   ],
 }
 
+export const mOperation = {
+  title: '내겐 너무 어려운 쇼핑몰 운영!',
+  subTitle: '이런 상황이라면? 지금 바로 사용해보세요!',
+  itemList: [
+    {
+      image: 's_operation_item1.png',
+      text: `온라인 판매가<br />어렵게 느껴지시는분`,
+      alt: 'earth',
+    },
+    {
+      image: 's_operation_item2.png',
+      text: `상품종류가 많아서<br />관리가 힘든분`,
+      alt: 'laptop 3',
+    },
+    {
+      image: 's_operation_item4.png',
+      text: `쿠팡 외 판매채널을<br />더 늘리고 싶으신분`,
+      alt: 'laptop 4',
+    },
+    {
+      image: 's_operation_item5.png',
+      text: `효율적인 광고로 새는<br />광고비를 막고 싶은분`,
+      alt: 'wallet',
+    },
+  ],
+}
+
 export const ees = {
   title: 'EVERYONE·EASY·SIMPLE',
   content: `주문수집과 CS처리, 정산은 물론이고<br />매출통계와 광고효율성까지 챙겨요!`,

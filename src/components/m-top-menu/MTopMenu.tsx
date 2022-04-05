@@ -33,7 +33,7 @@ function MTopMenu(props: Props) {
             <img
               src='logo.png'
               alt='모두편해'
-              width={100}
+              width={110}
               className='object-contain'
             />
           </div>

@@ -1,4 +1,5 @@
 import Container from 'common/custom-container/Container'
+import MOperationSection from 'components/m-operation-section/MOperationSection'
 import { operation } from 'data/section-content'
 import React from 'react'
 
@@ -6,15 +7,17 @@ function OperationSection() {
   return (
     <Container flexDirection='column'>
       <div>
-        <span>Special Solution</span>
-        <h4 className='font-bold text-6xl text-center tracking-tight mb-6'>
+        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-lg my-5'>
+          Special Solution
+        </span>
+        <h1 className='font-bold text-center lg:mb-6 text-3xl lg:text-6xl tracking-[-2.3px]'>
           {operation.title}
-        </h4>
-        <h5 className='text-4xl text-center mt-3 mb-14 text-[#38485B] tracking-tight'>
+        </h1>
+        <h2 className='text-center mt-2 mb-10 lg:mb-14 text-[#38485B] tracking-[-2.3px] text-[1.35rem] lg:text-4xl'>
           {operation.subTitle}
-        </h5>
+        </h2>
       </div>
-      <div className='flex justify-between'>
+      <div className='justify-between hidden lg:flex'>
         {operation.itemList.map((item, idx) => (
           <div key={idx} className='flex flex-col items-center'>
             <img width={200} height={200} src={item.image} alt={item.alt} />
@@ -25,6 +28,7 @@ function OperationSection() {
           </div>
         ))}
       </div>
+      <MOperationSection />
     </Container>
   )
 }

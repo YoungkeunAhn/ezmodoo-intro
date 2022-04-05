@@ -1,9 +1,9 @@
+import MBannerSection from 'components/m-banner-section/MBannerSection'
 import { banner } from 'data/banner'
 import React from 'react'
-import { A11y, Autoplay, Navigation, Pagination } from 'swiper'
+import { A11y, Autoplay, Pagination } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/autoplay'
-import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -11,15 +11,14 @@ function BannerSection() {
   return (
     <section>
       <Swiper
-        modules={[Navigation, A11y, Pagination, Autoplay]}
+        modules={[A11y, Pagination, Autoplay]}
         slidesPerView={1}
         navigation
         loop={true}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 4000 }}
         speed={300}
         pagination={{ clickable: true }}
-        className='w-full'
-        style={{ height: 'calc(100vh - 121px)' }}
+        className='w-full h-[calc(100vh-121px)] hidden lg:block'
       >
         {banner.map((item, idx) => (
           <SwiperSlide key={idx}>
@@ -37,6 +36,7 @@ function BannerSection() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <MBannerSection />
     </section>
   )
 }

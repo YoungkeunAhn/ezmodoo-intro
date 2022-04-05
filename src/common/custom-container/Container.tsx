@@ -14,8 +14,8 @@ function Container(props: Props) {
     <section
       id={sectionId}
       className={`${noBg ? '' : 'bg-[#F4F5F8]'} ${
-        noFixedHeight ? '' : 'h-[40rem]'
-      }  flex justify-center items-center box-border`}
+        noFixedHeight ? '' : 'lg:h-[40rem]'
+      }  flex justify-center items-center box-border pb-8 lg:pb-0`}
     >
       <div
         className={`max-w-[1150px] flex flex-1 ${

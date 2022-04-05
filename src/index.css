@@ -65,3 +65,60 @@ input[type='checkbox']:checked {
 input[type='checkbox']:checked::after {
   display: block;
 }
+
+.swiper h1 {
+  font-size: 4.5rem;
+}
+.swiper h2 {
+  font-size: 3.5rem;
+}
+.swiper h3 {
+  font-size: 2.5rem;
+}
+.swiper h4 {
+  font-size: 1.5rem;
+}
+.swiper .ql-align-center {
+  text-align: center;
+}
+
+.m-swiper h1 {
+  font-size: 2rem;
+}
+.m-swiper h2 {
+  font-size: 1.75rem;
+}
+.m-swiper h3 {
+  font-size: 1.5rem;
+}
+.m-swiper h4 {
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 1020px) {
+  .swiper-pagination-bullet {
+    opacity: 1 !important;
+    width: 7px !important;
+    height: 7px !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .m-swiper h1 {
+    font-size: 7vw;
+  }
+  .m-swiper h2 {
+    font-size: 6vw;
+  }
+  .m-swiper h3 {
+    font-size: 5vw;
+  }
+
+  section h1 {
+    font-size: 7vw !important;
+  }
+  section h2 {
+    font-size: 5vw !important;
+  }
+  section .textBox {
+    font-size: 4vw;
+  }
+}
