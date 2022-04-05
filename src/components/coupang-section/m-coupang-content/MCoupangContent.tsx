@@ -6,20 +6,18 @@ type Props = {
   className: string
 }
 
-function CoupangContent(props: Props) {
+function MCoupangContent(props: Props) {
   const { className } = props
 
   return (
     <div className={className}>
-      {coupang.parnassus.map((p, idx) => (
-        <p
-          className='text-2xl mb-5 font-medium leading-loose tracking-[-0.62px]'
-          key={idx}
-          dangerouslySetInnerHTML={{ __html: p }}
-        ></p>
-      ))}
+      <img
+        src='coupang_img.png'
+        alt='coupang monitor'
+        className='w-[80vw] max-w-[29rem] mx-auto my-14'
+      />
 
-      <div className='flex justify-between items-center mt-10 w-full'>
+      <div className='grid grid-cols-2 grid-flow-row w-full justify-items-center gap-x-2 sm:gap-x-4 px-10'>
         <div className='w-full h-full flex flex-col justify-between items-center space-y-5'>
           {coupang.itemList.map(
             (item, idx) =>
@@ -28,11 +26,7 @@ function CoupangContent(props: Props) {
               )
           )}
         </div>
-        <img
-          src='coupang_img.png'
-          alt='coupang monitor'
-          className='w-[29rem] ml-10 mr-10'
-        />
+
         <div className='w-full flex flex-col justify-between items-center space-y-5'>
           {coupang.itemList.map(
             (item, idx) =>
@@ -46,4 +40,4 @@ function CoupangContent(props: Props) {
   )
 }
 
-export default CoupangContent
+export default MCoupangContent

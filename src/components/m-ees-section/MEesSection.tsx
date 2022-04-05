@@ -17,7 +17,7 @@ function MEesSection(props: Props) {
         backgroundPosition: 'bottom left',
         backgroundColor: '#12121C',
       }}
-      className={`flex justify-center items-center h-[400px] relative ${className}`}
+      className={`flex justify-center items-center min-h-[400px] relative ${className}`}
     >
       <div className='flex justify-center items-center absolute left-[48vw] md:left-[250px] pr-5'>
         <div className='text-white text-left'>

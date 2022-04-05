@@ -6,7 +6,7 @@ import React from 'react'
 function OperationSection() {
   return (
     <Container flexDirection='column'>
-      <div>
+      <div className='pt-10 lg:py-0'>
         <span className='block lg:hidden text-[#FF9600] font-bold text-center text-lg my-5'>
           Special Solution
         </span>

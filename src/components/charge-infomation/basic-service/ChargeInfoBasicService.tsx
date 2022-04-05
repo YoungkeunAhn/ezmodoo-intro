@@ -5,7 +5,7 @@ function ChargeInfoBasicService() {
   return (
     <div>
       <h2 className='text-4xl font-bold mb-20 text-center'>기본제공서비스</h2>
-      <CoupangContent />
+      <CoupangContent className='hidden lg:block' />
     </div>
   )
 }
