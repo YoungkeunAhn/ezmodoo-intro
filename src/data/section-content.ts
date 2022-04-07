@@ -95,6 +95,7 @@ export const sellerEasy = {
   title: `셀러가 이렇게 쉬울 일이야?<br />모두에게 쉽고 너무 편해서 <span class="text-[#FF9600]">모두편해</span>`,
   subTitle: `주문수집, 상품관리 및 재고관리 완벽!<br />API의 자동 주문수집과 재고 자동 통합관리기능은 고객님의 실재고와 쿠팡의 재고수량을 실시간 자동으로 관리할 수 있어 시간, 비용, 일손이 확 줄어듭니다.`,
   images: ['sub_seller_image1.jpg', 'sub_seller_image2.jpg'],
+  mSubTitle: `API의 자동 주문수집, 상품관리 및 재고관리 완벽!<br/>시간, 비용, 일손이 확 줄어듭니다.`,
 }
 
 export const fulfillment = {

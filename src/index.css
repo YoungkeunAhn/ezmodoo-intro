@@ -118,6 +118,12 @@ input[type='checkbox']:checked::after {
   section h2 {
     font-size: 5vw !important;
   }
+  section h3 {
+    font-size: 4.25vw !important;
+  }
+  section h4 {
+    font-size: 3vw !important;
+  }
   section .textBox {
     font-size: 4vw;
   }

@@ -2,15 +2,9 @@ import { coupang } from 'data/section-content'
 import React from 'react'
 import CoupangItemBox from '../item-box/CoupangItemBox'
 
-type Props = {
-  className: string
-}
-
-function MCoupangContent(props: Props) {
-  const { className } = props
-
+function MCoupangContent() {
   return (
-    <div className={className}>
+    <div>
       <img
         src='coupang_img.png'
         alt='coupang monitor'
