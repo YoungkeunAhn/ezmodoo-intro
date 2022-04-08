@@ -12,8 +12,8 @@ function MainLayout(props: Props) {
 
   return (
     <div>
-      <TopMenu className='hidden lg:block' />
-      <MTopMenu className='block lg:hidden' />
+      <TopMenu className="hidden lg:block" />
+      <MTopMenu className="block lg:hidden" />
       <main>{children}</main>
       <ScrollTopBtn />
     </div>

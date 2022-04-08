@@ -27,21 +27,23 @@ function MTopMenu(props: Props) {
 
   return (
     <div className={`${className} sticky z-50 top-0`}>
-      <div className='relative'>
-        <div className='bg-white flex justify-between p-5'>
+      <div className="relative">
+        <div className="bg-white flex justify-between p-5">
           <div>
-            <img
-              src='logo.png'
-              alt='모두편해'
-              width={110}
-              className='object-contain'
-            />
+            <Link to="/">
+              <img
+                src="logo.png"
+                alt="모두편해"
+                width={110}
+                className="object-contain"
+              />
+            </Link>
           </div>
           <img
-            src='m_menu_icon.png'
-            alt='mobile menu icon'
+            src="m_menu_icon.png"
+            alt="mobile menu icon"
             width={30}
-            className='object-contain cursor-pointer'
+            className="object-contain cursor-pointer"
             onClick={openMenuList}
           />
         </div>
@@ -60,11 +62,11 @@ function MTopMenu(props: Props) {
             }`}
             style={{ transition: 'height .8s ease-in-out' }}
           >
-            <ul className='flex flex-col space-y-5 p-5'>
+            <ul className="flex flex-col space-y-5 p-5">
               {mTopMemu.map((menu, idx) => (
                 <li key={idx}>
                   <div
-                    className='cursor-pointer flex justify-between items-center'
+                    className="cursor-pointer flex justify-between items-center"
                     onClick={() =>
                       menu.subTitle.length === 0
                         ? () => {}
@@ -88,7 +90,7 @@ function MTopMenu(props: Props) {
                       style={{ transition: '.5s' }}
                     >
                       {menu.subTitle.map((sub, idx) => (
-                        <Link to={sub.url} className='w-full'>
+                        <Link to={sub.url} className="w-full">
                           <li key={idx}>{sub.title}</li>
                         </Link>
                       ))}
