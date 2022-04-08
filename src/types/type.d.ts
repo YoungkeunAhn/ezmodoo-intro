@@ -89,3 +89,11 @@ declare interface mBannerType extends BannerType {
   url?: string
   bottomContent?: string
 }
+
+declare type mCardType = {
+  icon: string
+  bgImage: string
+  title: string
+  content: string
+  url: string
+}
