@@ -28,6 +28,19 @@ export const extraChinaImport: ExtraPageType = {
     `상품수령 및 확인 : 제품이 정확하게 배송이 되었는지 꼼꼼히 체크합니다.`,
     `고객님께 배송 : 모두편해에서 주문하신 상품을 고객님께 발송 해드립니다.`,
   ],
+  mColorFrameData: {
+    titleList: [
+      '원하는제품검색 (링크주소 확인)',
+      '구매대행 견적의뢰서 작성',
+      '구입가능유무 확인 및 1차 결제금안내',
+      '중국현지 제품주문',
+      '중국현지수령 및 2차 결제금안내',
+      '결제 확인 후 한국으로 제품발송',
+      '고객제품 수령',
+    ],
+    mainColor: '#39668F',
+    subColor: '#7FA2C2',
+  },
 }
 
 export const extraDesign: ExtraPageType = {
@@ -63,6 +76,19 @@ export const extraDesign: ExtraPageType = {
     `디자인 시안 불만족시 디자인 시안비용 발생(결제금액의 50% 추가금액)`,
     `상세페이지는 기준보다 늘어날 경우 1,000px 당 10,000원씩 추가금액이 발생합니다.<br />초안 수령 후 2회 수정 포함 가격입니다. 작업은 결제 후 익일부터 진행됩니다.`,
   ],
+  mColorFrameData: {
+    titleList: [
+      '제작문의 및 일정상담',
+      '견적확인 후 결제',
+      '컨셉과 자료전달',
+      '일정확인',
+      '디자인 초안',
+      '시안확인 및 수정',
+      '완료',
+    ],
+    mainColor: '#51248E',
+    subColor: '#8B70C9',
+  },
 }
 
 export const extraForward: ExtraPageType = {
@@ -93,4 +119,17 @@ export const extraForward: ExtraPageType = {
     `제트배송, 로켓배송 및 판매자배송까지 배차 누락없는 100% 책임배차 시스템으로 고객님의 제품을 세심하게 관리 합니다.`,
     `자세한 이용 사항은 견적문의 진행시 안내가 가능합니다.`,
   ],
+  mColorFrameData: {
+    titleList: [
+      '원하는제품검색 (링크주소 확인)',
+      '구매대행 견적의뢰서 작성',
+      '구입가능유무 확인 및 1차 결제금안내',
+      '중국현지 제품주문',
+      '중국현지수령 및 2차 결제금안내',
+      '결제 확인 후 한국으로 제품발송',
+      '고객제품 수령',
+    ],
+    mainColor: '#7DB3C1',
+    subColor: '#0F7D8A',
+  },
 }

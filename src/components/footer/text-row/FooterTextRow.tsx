@@ -9,8 +9,8 @@ function FooterTextRow(props: Props) {
   const { title, content } = props
 
   return (
-    <div className='flex space-x-2 justify-center items-center text-xs'>
-      <span className='uppercase'>{title}</span>
+    <div className="flex space-x-1 md:space-x-2 justify-center items-center text-[8px] md:text-xs">
+      <span className="uppercase">{title}</span>
       <span>/</span>
       <span>{content}</span>
     </div>

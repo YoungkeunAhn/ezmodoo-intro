@@ -70,6 +70,11 @@ declare type ExtraPageType = {
   image: string
   color: string
   stepList: string[]
+  mColorFrameData: {
+    titleList: string[]
+    mainColor: string
+    subColor: string
+  }
 }
 declare type BannerType = {
   id: string

@@ -38,8 +38,8 @@ function PageLayout(props: Props) {
           <h1 className="text-4xl lg:text-6xl font-bold text-white">{title}</h1>
         </div>
       </div>
-      <div className="py-8 lg:py-28 bg-[#F4F5F8]">
-        <div className="max-w-[1150px] m-auto px-4 lg:px-0">
+      <div className="py-8 lg:py-28 bg-[#F4F5F8] pb-24 md:pb-8">
+        <div className="max-w-[1150px] m-auto px-6 md:px-0">
           <div>
             <h3 className="text-[#777] text-md text-center hidden lg:block">
               {engTitle}
@@ -48,7 +48,7 @@ function PageLayout(props: Props) {
               {title}
             </h2>
             <div
-              className="text-black lg:text-[#777] text-2xl text-center m-14"
+              className="text-black lg:text-[#777] text-center my-14 text-lg md:text-2xl"
               dangerouslySetInnerHTML={{ __html: summary }}
             ></div>
           </div>

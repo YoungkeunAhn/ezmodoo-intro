@@ -1,4 +1,7 @@
+import DataInputLayoutButton from 'components/data-input-layout-button/DataInputLayoutButton'
 import ExtraPageCardItem from 'components/extra-page-card-item/ExtraPageCardItem'
+import MExtraPageColorFrame from 'components/m-extra-page-frame/m-extra-page-color-frame/MExtraPageColorFrame'
+import MExtraPageTopFrame from 'components/m-extra-page-frame/m-extra-page-top-frame/MExtraPageTopFrame'
 import React from 'react'
 import DataInputLayout from './DataInputLayout'
 
@@ -8,19 +11,14 @@ type Props = {
 
 function ExtraPageLayout(props: Props) {
   const { data } = props
-  const { title, cardList, image, color, stepList } = data
+  const { title, cardList, image, color, stepList, mColorFrameData } = data
   return (
-    <DataInputLayout
-      button={
-        <button className="bg-white w-40 rounded-3xl py-2 hover:bg-[#eee] cursor-pointer">
-          문의하기
-        </button>
-      }
-      extra
-    >
+    <DataInputLayout button={<DataInputLayoutButton />}>
       <div className="flex flex-col items-left">
-        <h1 className="text-center font-bold text-2xl mb-14">{title}</h1>
-        <div className="mb-20">
+        <h1 className="text-center font-bold text-2xl mb-14 hidden md:block">
+          {title}
+        </h1>
+        <div className="mb-20 hidden md:block">
           <div className="relative flex flex-col">
             <div className="flex space-x-4 px-4 z-30">
               {cardList.map((card, idx) => (
@@ -34,15 +32,19 @@ function ExtraPageLayout(props: Props) {
           </div>
         </div>
 
-        <img src={image} alt="service step" className="mb-14" />
+        <MExtraPageTopFrame cardList={cardList} color={color} />
+        <img src={image} alt="service step" className="mb-14 hidden md:block" />
+        <MExtraPageColorFrame data={mColorFrameData} />
 
-        <div className="flex flex-col">
+        <div className="flex flex-col px-4 mt-10 md:mt-0">
           {stepList.map((step, idx) => (
-            <div key={idx} className="flex">
-              <div className="mr-4 leading-10">{idx + 1}</div>
+            <div
+              key={idx}
+              className="flex text-sm md:text-base leading-6 md:leading-10"
+            >
+              <div className="mr-4">{idx + 1}</div>
               <div
                 dangerouslySetInnerHTML={{ __html: step }}
-                className="leading-10"
                 style={{ wordBreak: 'keep-all' }}
               ></div>
             </div>
