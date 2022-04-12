@@ -11,14 +11,15 @@ function MSellerSection() {
         backgroundPosition: 'center',
       }}
     >
-      <div className="flex flex-col justify-center items-center px-8 py-20">
+      <div className="flex flex-col justify-center items-center px-4 md:px-8 py-20">
         <h3 className="text-2xl mb-3">셀러가 이렇게 쉬울 일이야?</h3>
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-xl md:text-3xl font-bold">
           모두에게 쉽고 너무 편해서
           <span className="text-[#FF9600]">모두편해</span>
         </h2>
         <p
-          className="leading-relaxed mb-16"
+          className="leading-relaxed mb-16
+          mt-10"
           dangerouslySetInnerHTML={{ __html: sellerEasy.mSubTitle }}
         ></p>
         <ButtonBox />

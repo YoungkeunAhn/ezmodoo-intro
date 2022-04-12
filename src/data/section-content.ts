@@ -123,25 +123,25 @@ export const fulfillmentCard = [
 
 export const mFulfillmentCard: mCardType[] = [
   {
-    icon: '',
+    icon: 'fulfill_card_icon1.png',
     title: '풀필먼트 / 물류대행',
-    content: `온라인 판매에 필요한 모든 물류처리 과정을 대행합니다.<br />고객사의 상품보관, 주문수집, 포장배송, 송장전송 등을 신속정확하게 처리하는 물류시스템의 특화기술입니다.`,
+    content: `온라인 판매에 필요한 모든 물류처리 과정을 대행합니다.<br />고객사의 상품보관, 주문수집, 포장배송, 송장전송 등을<br/>신속정확하게 처리하는 물류시스템의 특화기술입니다.`,
     url: '',
-    bgImage: '',
+    bgImage: 'm_fulfill_bg1.jpg',
   },
   {
-    icon: '',
+    icon: 'fulfill_card_icon1.png',
     title: '컨텐츠 제작대행',
     content: `차별화된 경쟁력을 위한 핵심 요소인 디자인을<br />아무렇게나 만드실건가요? 높은 가독성과<br />트렌드에 맞는 젊고 감각적인 디자인으로 제작해드립니다.`,
     url: '',
-    bgImage: '',
+    bgImage: 'm_fulfill_bg2.jpg',
   },
   {
-    icon: '',
+    icon: 'fulfill_card_icon2.png',
     title: '중국구매대행',
     content:
       '초보셀러를 위한 모두편해의 구매대행 서비스는<br />자동주문 시스템이 아닌 100% 맨투맨 시스템으로<br />합리적이고 저렴한 가격으로 구매를 대행해드립니다.',
     url: '',
-    bgImage: '',
+    bgImage: 'm_fulfill_bg3.jpg',
   },
 ]

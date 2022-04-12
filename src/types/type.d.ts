@@ -13,6 +13,7 @@ declare type PageType = {
   bgImage: string
   engTitle: string
   summary: string
+  mBgImage: string
 }
 
 declare type ChargeInfoCardType = {
