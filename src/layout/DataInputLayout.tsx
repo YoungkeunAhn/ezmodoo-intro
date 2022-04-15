@@ -17,7 +17,7 @@ function DataInputLayout(props: Props) {
           className='w-[93px] md:w-[130px] object-contain '
         />
       </header>
-      <main className='bg-white flex justify-center items-center py-12 md:py-20'>
+      <main className='bg-white flex justify-center items-center py-8 md:py-20'>
         <div className={`${extra ? 'max-w-[978px]' : 'w-full max-w-[54rem]'}`}>
           {children}
         </div>

@@ -17,9 +17,9 @@ function ChargeInfomationCardForm(props: Props) {
           {type}
         </h4>
       </div>
-      <div className='bg-white p-4 md:py-10'>
+      <div className='bg-white md:p-4 md:py-10'>
         <ul>
-          <li className='text-center py-3'>
+          <li className='text-center py-2'>
             <span className='text-xl md:text-4xl font-bold mr-2'>{price}</span>
             <span className='text-sm md:text-base'>원/월</span>
           </li>
@@ -27,7 +27,7 @@ function ChargeInfomationCardForm(props: Props) {
             <li
               key={idx}
               style={{ borderTop: '2px dashed #E3EAF1' }}
-              className='text-center py-3 text-[#666] text-xs md:text-lg'
+              className='text-center py-2 text-[#666] text-xs md:text-lg'
             >
               {value}
             </li>

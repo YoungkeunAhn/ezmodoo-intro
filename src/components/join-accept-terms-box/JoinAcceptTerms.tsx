@@ -19,7 +19,7 @@ function JoinAcceptTerms(props: Props) {
 
   return (
     <div>
-      <div className='my-16 flex justify-between'>
+      <div className='my-10 md:my-16 flex justify-between'>
         <h2 className='text-xl md:text-3xl font-bold'>약관 동의</h2>
         <div className='flex justify-end items-center'>
           <input

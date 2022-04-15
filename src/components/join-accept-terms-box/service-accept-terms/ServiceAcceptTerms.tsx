@@ -11,7 +11,7 @@ function ServiceAcceptTerms() {
         <span>&#40;{required ? '필수' : '선택'}&#41;</span>
       </h1>
       <div
-        className='w-full bg-[#F4F5F8] p-4  flex flex-col max-h-[170px] overflow-y-auto text-[#666] border scrollbar-hide mt-2'
+        className='w-full bg-[#F4F5F8] p-4  flex flex-col max-h-[170px] overflow-y-auto text-[#666] border scrollbar-hide mt-2 text-xs md:text-base'
         style={{ WebkitScrollSnapType: 'none' }}
       >
         {content.map((content, idx) => (

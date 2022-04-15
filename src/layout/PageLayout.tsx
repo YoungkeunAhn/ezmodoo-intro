@@ -11,7 +11,7 @@ type Props = {
 
 function PageLayout(props: Props) {
   const { children, header } = props
-  const { title, engTitle, summary, bgImage, mBgImage } = header
+  const { title, engTitle, summary, bgImage, mBgImage, mSummary } = header
 
   return (
     <div>
@@ -48,8 +48,12 @@ function PageLayout(props: Props) {
               {title}
             </h2>
             <div
-              className='text-black lg:text-[#777] text-center my-14 text-lg md:text-2xl'
+              className='text-black lg:text-[#777] text-center my-14 text-lg md:text-2xl hidden md:block'
               dangerouslySetInnerHTML={{ __html: summary }}
+            ></div>
+            <div
+              className='text-black lg:text-[#777] text-center my-14 md:hidden'
+              dangerouslySetInnerHTML={{ __html: mSummary }}
             ></div>
           </div>
           {children}

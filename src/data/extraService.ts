@@ -129,7 +129,7 @@ export const extraForward: ExtraPageType = {
       '결제 확인 후 한국으로 제품발송',
       '고객제품 수령',
     ],
-    mainColor: '#7DB3C1',
-    subColor: '#0F7D8A',
+    mainColor: '#0F7D8A',
+    subColor: '#7DB3C1',
   },
 }

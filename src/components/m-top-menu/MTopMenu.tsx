@@ -35,6 +35,10 @@ function MTopMenu(props: Props) {
     setLoginBox(false)
   }
 
+  const goHome = () => {
+    alert('x')
+  }
+
   return (
     <div className={`${className} sticky z-50 top-0`}>
       <div className='relative'>
@@ -59,19 +63,17 @@ function MTopMenu(props: Props) {
         </div>
 
         <div
-          onClick={(e) => {
-            e.stopPropagation()
-            setOpen(false)
-          }}
           className={`absolute flex w-full`}
           style={{
             background: open ? 'rgba(0,0,0,0.5)' : 'rgba(0,0,0,0)',
             transition: 'background .5s .5s ease-in-out',
           }}
         >
-          <div className={`w-full flex-1 ${open ? 'h-screen' : 'h-0'}`}></div>
           <div
-            onClick={(e) => e.stopPropagation()}
+            className={`w-full flex-1 ${open ? 'h-screen' : 'h-0'}`}
+            onClick={() => setOpen(false)}
+          ></div>
+          <div
             className={`w-[250px] bg-[#F4F5F8] overflow-hidden flex flex-col ${
               open ? 'h-screen' : 'h-0'
             }`}
@@ -84,7 +86,7 @@ function MTopMenu(props: Props) {
                     className='cursor-pointer flex justify-between items-center'
                     onClick={(e) =>
                       menu.subTitle.length === 0
-                        ? () => {}
+                        ? (window.location.href = '/ezmodoo_intro')
                         : openSubMenu(menu.title)
                     }
                   >
@@ -106,7 +108,7 @@ function MTopMenu(props: Props) {
                     >
                       {menu.subTitle.map((sub, idx) => (
                         <Link to={sub.url} className='w-full'>
-                          <li key={idx}>{sub.title}</li>
+                          <li key={idx}>- {sub.title}</li>
                         </Link>
                       ))}
                     </ul>
