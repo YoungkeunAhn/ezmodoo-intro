@@ -53,13 +53,15 @@ function DataInputBox(props: Props) {
   return (
     <div
       className={`flex w-full  ${
-        flexCol ? 'flex-col item-left' : 'items-center'
+        flexCol ? 'flex-col item-left' : 'flex-col md:flex-row items-center'
       }`}
     >
       <label
         htmlFor={name}
-        className={`text-[#686868] font-bold ${
-          smLableWidth ? 'w-[7rem]' : 'w-[9rem]'
+        className={`text-[#686868] font-bold text-sm md:text-base ${
+          smLableWidth
+            ? 'w-full md:w-[7rem] mb-2 md:mb-0'
+            : 'w-full md:w-[9rem] mb-2 md:mb-0'
         }`}
       >
         {label}
@@ -67,7 +69,7 @@ function DataInputBox(props: Props) {
       {multiLine ? (
         <textarea
           id={name}
-          className={`form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8] ${
+          className={`form-control block w-full px-4 py-2 text-xs md:text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8] ${
             errorCheck && 'border-rose-400'
           }`}
           name={name}
@@ -79,7 +81,7 @@ function DataInputBox(props: Props) {
       ) : (
         <input
           id={name}
-          className={`form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8] ${
+          className={`form-control block w-full px-4 py-2 text-xs md:text-sm font-normal text-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none bg-[#F4F5F8] ${
             errorCheck && 'border-rose-400'
           }
           ${flexCol && 'text-center'}`}

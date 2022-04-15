@@ -20,14 +20,17 @@ function JoinAcceptTerms(props: Props) {
   return (
     <div>
       <div className='my-16 flex justify-between'>
-        <h2 className='text-3xl font-bold'>약관 동의</h2>
+        <h2 className='text-xl md:text-3xl font-bold'>약관 동의</h2>
         <div className='flex justify-end items-center'>
           <input
             type='checkbox'
             checked={checkList.length === 2}
             onChange={onChangeAllCheck}
           />
-          <span className='ml-5 cursor-pointer' onClick={onChangeAllCheck}>
+          <span
+            className='ml-5 cursor-pointer text-sm md:text-base'
+            onClick={onChangeAllCheck}
+          >
             전체 동의
           </span>
         </div>
@@ -42,7 +45,7 @@ function JoinAcceptTerms(props: Props) {
               onChange={onChangeServiceCheck}
             />
             <span
-              className='ml-5 cursor-pointer'
+              className='ml-5 cursor-pointer text-sm md:text-base'
               onClick={onChangeServiceCheck}
             >
               동의합니다.
@@ -58,7 +61,7 @@ function JoinAcceptTerms(props: Props) {
               onChange={onChangeUserInfoCheck}
             />
             <span
-              className='ml-5 cursor-pointer'
+              className='ml-5 cursor-pointer text-sm md:text-base'
               onClick={onChangeUserInfoCheck}
             >
               동의합니다.

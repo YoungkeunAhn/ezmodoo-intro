@@ -100,14 +100,14 @@ function Question() {
           button={
             <button
               type='submit'
-              className='bg-white w-40 rounded-3xl py-2 hover:bg-[#eee] cursor-pointer'
+              className='bg-white w-40 rounded-3xl py-2 font-bold hover:bg-[#eee] cursor-pointer'
             >
               문의하기
             </button>
           }
         >
-          <div className='flex flex-col space-y-3'>
-            <div className='flex items-center space-x-10'>
+          <div className='flex flex-col px-4 md:px-0 space-y-3'>
+            <div className='flex items-center flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-10'>
               <DataInputBox
                 label='회사명'
                 name='company'
@@ -123,7 +123,7 @@ function Question() {
                 errorCheck={valiArr.includes('name')}
               />
             </div>
-            <div className='flex items-center space-x-10'>
+            <div className='flex items-center flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-10'>
               <DataInputBox
                 label='회사연락처'
                 name='companyCallNum'
@@ -171,12 +171,14 @@ function Question() {
                 onChange={(e) => setCheck(e.target.checked)}
               />
               <span
-                className='cursor-pointer mr-3'
+                className='cursor-pointer mr-3 text-xs md:text-base'
                 onClick={() => setCheck(!check)}
               >
                 개인정보 취급방침에 동의
               </span>
-              <span className='cursor-pointer'>[자세히보기]</span>
+              <span className='cursor-pointer text-xs md:text-base'>
+                [자세히보기]
+              </span>
             </div>
           </div>
         </DataInputLayout>

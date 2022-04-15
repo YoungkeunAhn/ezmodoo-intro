@@ -15,7 +15,7 @@ function CoupangItemBox(props: Props) {
         alt='document'
         className='mr-2 object-contain w-[4vw] lg:w-[40px]'
       />
-      <h4 className='text-[3vw] sm:text-[2.5vw] lg:text-2xl'>{title}</h4>
+      <span className='text-[1rem] lg:text-2xl'>{title}</span>
     </div>
   )
 }

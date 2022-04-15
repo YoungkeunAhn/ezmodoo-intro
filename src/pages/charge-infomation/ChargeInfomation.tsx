@@ -11,23 +11,28 @@ function ChargeInfomation() {
   return (
     <PageLayout header={chargeInfomationPageHeader}>
       <div>
-        <div className='flex space-x-4 w-full justify-center items-center'>
+        <div className='w-full md:flex md:space-x-4 md:justify-center md:items-center grid grid-flow-row grid-cols-2 gap-x-4 gap-y-8'>
           {chargeInfoCard.map((card, idx) => (
             <ChargeInfomationCardForm key={idx} data={card} />
           ))}
         </div>
 
-        <div className='flex justify-between items-center p-5 px-20 rounded-[200px] w-full bg-[#C6D5E3] text-[#2A3652] my-20'>
+        <div className='flex flex-col md:flex-row justify-between items-center p-5 md:px-20 rounded-3xl md:rounded-[200px] w-full bg-[#C6D5E3] text-[#2A3652] my-12 md:my-20'>
           <div className='flex flex-col items-center'>
-            <h2 className='text-5xl font-bold mb-10'>선납할인율</h2>
-            <div className='flex flex-col'>
+            <h2 className='text-3xl md:text-5xl font-bold mb-6 md:mb-10'>
+              선납할인율
+            </h2>
+            <div className='flex flex-col text-xs md:text-base'>
               <span>* 가입비와 판매수수료는 따로 없습니다.</span>
               <span>* 부가서비스는 별도신청입니다.</span>
             </div>
           </div>
-          {chargeInfoDiscount.map((info, idx) => (
-            <DiscountItemBox key={idx} data={info} />
-          ))}
+
+          <div className='flex mt-6 md:mt-0'>
+            {chargeInfoDiscount.map((info, idx) => (
+              <DiscountItemBox key={idx} data={info} />
+            ))}
+          </div>
         </div>
         <ChargeInfoBasicService />
         <ExperienceBtn />

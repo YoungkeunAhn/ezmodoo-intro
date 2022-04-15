@@ -4,7 +4,7 @@ export const banner: BannerType[] = [
     title: '테스트',
     active: true,
     image: 'A01.jpg',
-    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일이 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
+    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일히 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
     order: 1,
   },
   {
@@ -12,7 +12,7 @@ export const banner: BannerType[] = [
     title: '테스트2',
     active: false,
     image: 'A01.jpg',
-    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일이 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
+    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일히 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
     order: 2,
   },
   {
@@ -20,7 +20,7 @@ export const banner: BannerType[] = [
     title: '테스트3',
     active: true,
     image: 'A01.jpg',
-    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일이 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
+    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일히 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
     order: 3,
   },
   {
@@ -28,7 +28,7 @@ export const banner: BannerType[] = [
     title: '테스트4',
     active: true,
     image: 'A01.jpg',
-    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일이 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
+    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일히 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
     order: 4,
   },
   {
@@ -36,7 +36,7 @@ export const banner: BannerType[] = [
     title: '테스트5',
     active: false,
     image: 'A01.jpg',
-    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일이 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
+    content: `<h1 class="ql-align-center"><strong style="color: rgb(255, 255, 255);">언제 일일히 계산기 두들겨요</strong></h1><h2 class="ql-align-center"><br></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">재고부터 판매량, 판매통계, 광고분석까지</span></h2><h2 class="ql-align-center"><span style="color: rgb(255, 255, 255);">직관적으로 한눈에 보여드립니다. </span></h2>`,
     order: 5,
   },
 ]

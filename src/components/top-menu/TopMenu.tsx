@@ -16,9 +16,6 @@ function TopMenu(props: Props) {
     setLoginOpen(!loginOpen)
   }
 
-  const onLogin = () => {
-    setLoginOpen(false)
-  }
   const [topMenuOver, setTopMenuOver] = useState<boolean>(false)
 
   return (
@@ -27,8 +24,8 @@ function TopMenu(props: Props) {
         <div
           className={`p-5 bg-[#E3EAF1] relative flex justify-center border-b`}
         >
-          <p className="text-[#888] text-sm">{headerContent.title}</p>
-          <div className="flex justify-center items-center absolute right-4 lg:right-[16%] space-x-2">
+          <p className='text-[#888] text-sm'>{headerContent.title}</p>
+          <div className='flex justify-center items-center absolute right-4 lg:right-[16%] space-x-2'>
             {headerContent.icons.map((icon, idx) => (
               <a href={icon.url} key={idx}>
                 <img
@@ -38,7 +35,7 @@ function TopMenu(props: Props) {
                 />
               </a>
             ))}
-            <span className="text-xs text-gray-400">
+            <span className='text-xs text-gray-400'>
               {headerContent.channelName}
             </span>
           </div>
@@ -54,20 +51,20 @@ function TopMenu(props: Props) {
         onMouseOut={() => setTopMenuOver(false)}
       >
         {/* 메인메뉴 */}
-        <ul className="flex justify-center items-center bg-white hover:cursor-pointer max-w-[1350px] m-auto relative">
-          <li className="w-full flex justify-center">
-            <Link to="/">
+        <ul className='flex justify-center items-center bg-white hover:cursor-pointer max-w-[1350px] m-auto relative'>
+          <li className='w-full flex justify-center'>
+            <Link to='/'>
               <img
-                src="logo.png"
-                alt="모두편해"
-                className="h-4 lg:h-7 object-contain"
+                src='logo.png'
+                alt='모두편해'
+                className='h-4 lg:h-7 object-contain'
               />
             </Link>
           </li>
           {topMenu.map((menu, idx) => (
             <li
               key={idx}
-              className="flex justify-left items-center w-full px-1 py-4"
+              className='flex justify-left items-center w-full px-1 py-4'
               onMouseOver={(e) => {
                 if (idx === topMenu.length - 1) {
                   e.stopPropagation()
@@ -77,15 +74,15 @@ function TopMenu(props: Props) {
               }}
             >
               <div
-                className="md:text-sm lg:text-lg font-bold ml-5 flex items-center justify-cetner text-center w-full"
+                className='md:text-sm lg:text-lg font-bold ml-5 flex items-center justify-cetner text-center w-full'
                 onClick={() => menu.title === '로그인' && openLogin()}
               >
-                <span className="w-full text-center flex justify-center items-center">
+                <span className='w-full text-center flex justify-center items-center'>
                   {menu.title === '로그인' && (
                     <img
-                      src="login_icon.png"
-                      alt="login icon"
-                      className="object-contain"
+                      src='login_icon.png'
+                      alt='login icon'
+                      className='object-contain'
                     />
                   )}
                   {menu.title}
@@ -94,15 +91,15 @@ function TopMenu(props: Props) {
             </li>
           ))}
           <li
-            className="w-full flex justify-center"
+            className='w-full flex justify-center'
             onMouseOver={(e) => {
               e.stopPropagation()
               setTopMenuOver(false)
               return false
             }}
           >
-            <Link to="/join">
-              <button className="inline-block px-3 lg:px-6 py-2.5 bg-[#7FA2C2] text-white text-sm lg:text-md leading-tight uppercase rounded-[40px] shadow-md hover:bg-[#6286A7] hover:shadow-lg focus:bg-[#6286A7] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#6286A7] active:shadow-lg transition duration-150 ease-in-out">
+            <Link to='/join'>
+              <button className='inline-block px-3 lg:px-6 py-2.5 bg-[#7FA2C2] text-white text-sm lg:text-md leading-tight uppercase rounded-[40px] shadow-md hover:bg-[#6286A7] hover:shadow-lg focus:bg-[#6286A7] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#6286A7] active:shadow-lg transition duration-150 ease-in-out'>
                 무료체험신청
               </button>
             </Link>
@@ -114,13 +111,13 @@ function TopMenu(props: Props) {
               return false
             }}
           >
-            <LoginBox open={loginOpen} onLogin={onLogin} />
+            <LoginBox open={loginOpen} />
           </div>
         </ul>
 
         {/* 서브메뉴 */}
         <div
-          className="w-full flex justify-center absolute z-50 border-t-2 border-b overflow-hidden border-[#7FA2C2]"
+          className='w-full flex justify-center absolute z-50 border-t-2 border-b overflow-hidden border-[#7FA2C2]'
           style={{
             transition: 'all 0.5s',
             height: topMenuOver ? '300px' : 0,
@@ -131,11 +128,11 @@ function TopMenu(props: Props) {
           <ul
             className={`w-full flex justify-center align-top bg-white  duration-500 pt-2 pb-2 max-w-[1350px]`}
           >
-            <li className="w-full"></li>
+            <li className='w-full'></li>
             {topMenu.map((menu, idx) => (
               <li
                 key={idx}
-                className="flex flex-col items-left w-full"
+                className='flex flex-col items-left w-full'
                 onMouseOver={(e) => {
                   if (idx > topMenu.length - 2) {
                     e.stopPropagation()
@@ -157,14 +154,14 @@ function TopMenu(props: Props) {
                             <PlusCircle />
                           </span>
                         )}
-                        <span className="w-full">{sub.title}</span>
+                        <span className='w-full'>{sub.title}</span>
                       </div>
                     </Link>
                   ))}
               </li>
             ))}
             <li
-              className="w-full"
+              className='w-full'
               onMouseOver={(e) => {
                 e.stopPropagation()
                 setTopMenuOver(false)

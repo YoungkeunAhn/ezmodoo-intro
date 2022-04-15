@@ -21,7 +21,7 @@ function FaqSearchCategory(props: Props) {
 
   return (
     <div>
-      <div className='flex justify-center space-x-4'>
+      <div className='hidden md:flex justify-center space-x-4'>
         {faqSearchCategory.map((item, idx) => (
           <FaqSearchCategoryItemBtn
             key={idx}
@@ -31,10 +31,32 @@ function FaqSearchCategory(props: Props) {
           />
         ))}
       </div>
-      <div className='bg-white py-5 flex justify-center items-center mt-10 rounded-[4px] border'>
-        <div className='w-3/4 flex space-x-2 '>
+      <div className='flex flex-col items-center w-full space-y-2 md:hidden'>
+        <div className='flex justify-center items-center space-x-2 '>
+          {faqSearchCategory.slice(0, 4).map((item, idx) => (
+            <FaqSearchCategoryItemBtn
+              key={idx}
+              item={item}
+              searchOption={searchOption}
+              onClick={onClick}
+            />
+          ))}
+        </div>
+        <div className='flex justify-center items-center space-x-2'>
+          {faqSearchCategory.slice(4, 7).map((item, idx) => (
+            <FaqSearchCategoryItemBtn
+              key={idx}
+              item={item}
+              searchOption={searchOption}
+              onClick={onClick}
+            />
+          ))}
+        </div>
+      </div>
+      <div className='bg-white p-2 md:py-5 flex justify-between items-center mt-10 rounded-[4px] border'>
+        <div className='w-full md:w-3/4 flex space-x-2 '>
           <select
-            className='border rounded-[4px] px-2'
+            className='border rounded-[4px] px-2 text-sm md:text-base'
             value={searchOption.cateId}
             onChange={onChange}
           >
@@ -51,7 +73,8 @@ function FaqSearchCategory(props: Props) {
             onChange={onChangeSearchText}
           />
           <button
-            className='bg-[#39668F] p-2 border rounded-[4px] text-white font-bold w-20'
+            style={{ wordBreak: 'keep-all' }}
+            className='bg-[#39668F] p-2 border rounded-[4px] text-white font-bold w-20 text-sm md:text-base'
             onClick={() => onSearch(searchText)}
           >
             검색

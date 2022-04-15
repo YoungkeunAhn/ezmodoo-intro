@@ -12,14 +12,16 @@ function FaqContentListRow(props: Props) {
     <div className='border-b bg-white'>
       <div className='flex justify-between items-center'>
         <div className='flex p-4 items-center'>
-          <span className='text-5xl font-bold mr-5 text-[#31415E] w-11'>
+          <span className='text-xl font-bold mr-5 text-[#31415E] md:w-11 md:text-5xl'>
             Q.
           </span>
-          <span>{item.question}</span>
+          <span className='font-bold text-sm md:text-base'>
+            {item.question}
+          </span>
         </div>
         <div>
           <span
-            className='cursor-pointer p-5 mr-5 text-[3.5rem] text-center'
+            className='cursor-pointer p-2 md:p-5 md:mr-5 text-[2rem] md:text-[3.5rem] text-center text-[#888]'
             onClick={() => onClick(item.id)}
           >
             {open ? '-' : '+'}
@@ -32,11 +34,15 @@ function FaqContentListRow(props: Props) {
           boxSizing: 'border-box',
         }}
         className={`border-t flex overflow-hidden pl-5 ${
-          open ? 'h-20 ' : 'h-0'
+          open ? 'md:h-20 ' : 'h-0'
         }`}
       >
-        <span className='text-5xl font-bold text-[#567DC8] w-11 p-4'>A.</span>
-        <span className='ml-9 py-4 pr-4'>{item.answer}</span>
+        <span className='text-xl md:text-5xl font-bold text-[#567DC8] md:w-11 p-4'>
+          A.
+        </span>
+        <span className='md:ml-9 py-4 pr-4 text-sm md:text-base'>
+          {item.answer}
+        </span>
       </div>
     </div>
   )

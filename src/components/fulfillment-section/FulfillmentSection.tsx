@@ -12,33 +12,33 @@ function FulfillmentSection() {
           backgroundImage: 'url(fulfillment_bg.png)',
           backgroundSize: 'cover',
         }}
-        className="hidden lg:block"
+        className='hidden lg:block'
       >
         <div style={{ background: 'rgba(0,0,0,0.5)' }}>
           <Container noBg>
             <div>
-              <div className="flex justify-between text-white items-end">
-                <div className="flex">
-                  <div className="flex flex-col mr-10 mb-11 items-start">
-                    <div className="flex mb-3 justify-center">
+              <div className='flex justify-between text-white items-end'>
+                <div className='flex'>
+                  <div className='flex flex-col mr-10 mb-11 items-start'>
+                    <div className='flex mb-3 justify-center'>
                       <img
-                        src="white_logo.png"
-                        alt="white logo"
+                        src='white_logo.png'
+                        alt='white logo'
                         width={120}
-                        className="object-contain relative top-[-5px]"
+                        className='object-contain relative top-[-5px]'
                       />
-                      <span className="ml-2 whitespace-nowrap p-0 text-xs">
+                      <span className='ml-2 whitespace-nowrap p-0 text-xs'>
                         Fulfillment & Modoo Platform
                       </span>
                     </div>
-                    <div className="flex">
+                    <div className='flex'>
                       <img
                         src={fulfillment.icon}
-                        alt="fulfillment icon"
-                        className="object-contain mr-3"
+                        alt='fulfillment icon'
+                        className='object-contain mr-3'
                         width={50}
                       />
-                      <h1 className="text-4xl whitespace-nowrap">
+                      <h1 className='text-4xl whitespace-nowrap'>
                         {fulfillment.title}
                       </h1>
                     </div>
@@ -46,17 +46,17 @@ function FulfillmentSection() {
                 </div>
                 <h2
                   dangerouslySetInnerHTML={{ __html: fulfillment.text }}
-                  className="w-[32rem] text-lg"
+                  className='w-[32rem] text-lg'
                   style={{ wordBreak: 'keep-all' }}
                 ></h2>
-                <div className="ml-10 flex items-end pb-2">
+                <div className='ml-10 flex items-end pb-2'>
                   <ButtonBox white />
                 </div>
               </div>
               <img
-                src="fulfillment_img.png"
-                alt="logistics"
-                className="mt-10"
+                src='fulfillment_img.png'
+                alt='logistics'
+                className='mt-10'
               />
             </div>
           </Container>

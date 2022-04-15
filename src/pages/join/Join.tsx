@@ -153,9 +153,9 @@ function Join() {
             </button>
           }
         >
-          <div className='w-[52rem] flex flex-col space-y-5'>
-            <div className='flex justify-between items-end py-1 space-x-5 relative'>
-              <div className='w-full'>
+          <div className='w-full md:w-[52rem] flex flex-col space-y-2 md:space-y-5 px-4'>
+            <div className='flex justify-between items-end py-1 md:space-x-5 relative'>
+              <div className='w-full flex'>
                 <DataInputBox
                   label='아이디'
                   name='id'
@@ -168,7 +168,7 @@ function Join() {
               </div>
               <button
                 type='button'
-                className='bg-[#39668F] text-white text-center w-28 h-8 rounded-3xl mb-1'
+                className='bg-[#39668F] text-white text-center w-28 h-8 rounded-3xl md:mb-1 text-sm md:text-base ml-4 md:ml-0'
                 onClick={onClickDoubleCheck}
               >
                 중복확인
@@ -189,7 +189,7 @@ function Join() {
                 ''
               )}
             </div>
-            <div className='flex space-x-5 justify-between'>
+            <div className='flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 justify-between'>
               <DataInputBox
                 label='비밀번호'
                 name='passwd'
@@ -209,7 +209,7 @@ function Join() {
                 flexCol
               />
             </div>
-            <div className='flex space-x-5 justify-between'>
+            <div className='flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 justify-between'>
               <DataInputBox
                 label='상호/법인명'
                 name='company'
@@ -229,7 +229,7 @@ function Join() {
                 flexCol
               />
             </div>
-            <div className='flex space-x-5 justify-between'>
+            <div className='flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 justify-between'>
               <DataInputBox
                 label='담당자명'
                 name='name'
@@ -249,7 +249,7 @@ function Join() {
                 flexCol
               />
             </div>
-            <div className='flex space-x-5 justify-between'>
+            <div className='flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 justify-between'>
               <DataInputBox
                 label='담당자 이메일'
                 name='email'
