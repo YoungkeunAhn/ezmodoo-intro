@@ -6,7 +6,7 @@ export default function MFulfillmentSection() {
       <div className='flex flex-col space-y-4 px-2'>
         {new Array(3).fill(0).map((x, idx) => (
           <img
-            src={`m_fulfill_content${idx + 1}.png`}
+            src={`m_fulfill_content${idx + 1}.jpg`}
             alt='fulfillment content'
           />
         ))}
