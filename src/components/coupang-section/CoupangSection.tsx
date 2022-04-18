@@ -8,7 +8,7 @@ function CoupangSection() {
   return (
     <Container noFixedHeight>
       <div className='flex flex-col justify-between items-center py-10 lg:py-20'>
-        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-lg my-5'>
+        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm my-5'>
           Special Manager
         </span>
         <h1

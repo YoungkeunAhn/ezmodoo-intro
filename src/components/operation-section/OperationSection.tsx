@@ -7,7 +7,7 @@ function OperationSection() {
   return (
     <Container flexDirection='column'>
       <div className='pt-10 lg:py-0'>
-        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-lg my-5'>
+        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm my-5'>
           Special Solution
         </span>
         <h1 className='font-bold text-center lg:mb-6 text-3xl lg:text-6xl tracking-[-2.3px]'>

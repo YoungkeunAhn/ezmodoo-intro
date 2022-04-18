@@ -1,4 +1,4 @@
-import ScrollTopBtn from 'common/sroll-top-btn/ScrollTopBtn'
+import ScrollTopBtn from 'common/scroll-top-btn/ScrollTopBtn'
 import Footer from 'components/footer/Footer'
 import MTopMenu from 'components/m-top-menu/MTopMenu'
 import TopMenu from 'components/top-menu/TopMenu'
