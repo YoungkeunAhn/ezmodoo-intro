@@ -12,7 +12,7 @@ function MCoupangContent() {
       />
 
       <div className='grid grid-cols-2 grid-flow-row w-full justify-items-center gap-x-2 sm:gap-x-4'>
-        <div className='w-full h-full flex flex-col justify-between items-center space-y-5'>
+        <div className='w-full h-full flex flex-col justify-between items-center space-y-2'>
           {coupang.itemList.map(
             (item, idx) =>
               idx < 5 && (
@@ -21,7 +21,7 @@ function MCoupangContent() {
           )}
         </div>
 
-        <div className='w-full flex flex-col justify-between items-center space-y-5'>
+        <div className='w-full flex flex-col justify-between items-center space-y-2'>
           {coupang.itemList.map(
             (item, idx) =>
               idx > 4 && (

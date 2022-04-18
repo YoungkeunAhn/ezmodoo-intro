@@ -32,7 +32,7 @@ function MBannerSection() {
             <div dangerouslySetInnerHTML={{ __html: item.content }}></div>
             {item.button && (
               <button
-                className='py-2 px-4 mx-auto my-[10vh] block'
+                className='py-2 px-4 mx-auto my-[6vh] block'
                 style={{
                   border: item.button.border,
                   color: item.button.color,

@@ -7,8 +7,8 @@ import MCoupangContent from './m-coupang-content/MCoupangContent'
 function CoupangSection() {
   return (
     <Container noFixedHeight>
-      <div className='flex flex-col justify-between items-center py-10 lg:py-20'>
-        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm my-5'>
+      <div className='flex flex-col justify-between items-center pt-10 lg:py-20'>
+        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm my-3'>
           Special Manager
         </span>
         <h1
@@ -17,7 +17,7 @@ function CoupangSection() {
         ></h1>
 
         <div className='lg:hidden'>
-          <h3 className='text-center text-2xl mb-3'>
+          <h3 className='text-center text-2xl mb-1 md:mb-3'>
             쿠팡셀러라면 꼭 필요한 통합솔루션
           </h3>
           <h1 className='text-center text-3xl font-bold'>
