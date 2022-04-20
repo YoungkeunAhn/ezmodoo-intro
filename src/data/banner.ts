@@ -55,7 +55,7 @@ export const mBanner: mBannerType[] = [
       color: '#ffffff',
       radius: 40,
     },
-    url: 'join',
+    url: '/join',
     bottomContent: `<h3 style="color:#fff; text-align: center">대한민국 최초!</h3><h3 style="color:#fff; text-align: center">쿠팡판매에 최적화된 통합관리 솔루션</h3>`,
   },
   {
@@ -71,7 +71,7 @@ export const mBanner: mBannerType[] = [
       color: '#ffffff',
       radius: 40,
     },
-    url: 'join',
+    url: '/join',
     bottomContent: `<h3 style="color:#fff; text-align: center">대한민국 최초!</h3><h3 style="color:#fff; text-align: center">쿠팡판매에 최적화된 통합관리 솔루션</h3>`,
   },
   {
@@ -87,7 +87,7 @@ export const mBanner: mBannerType[] = [
       color: '#ffffff',
       radius: 40,
     },
-    url: 'join',
+    url: '/join',
     bottomContent: `<h3 style="color:#fff; text-align: center">대한민국 최초!</h3><h3 style="color:#fff; text-align: center">쿠팡판매에 최적화된 통합관리 솔루션</h3>`,
   },
 ]

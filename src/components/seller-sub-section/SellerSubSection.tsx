@@ -6,12 +6,12 @@ function SellerSubSection() {
       <img
         src='sub_seller_image1.png'
         alt='coupang loadmap'
-        className='object-contain w-full max-w-[24rem] lg:max-w-[30rem]'
+        className='object-contain w-full sm:w-[80vw] md:max-w-[24rem] lg:max-w-[30rem]'
       />
       <img
         src='sub_seller_image2.png'
         alt='coupang loadmap'
-        className='object-contain w-full max-w-[24rem] lg:max-w-[30rem]'
+        className='object-contain w-full sm:w-[80vw] md:max-w-[24rem] lg:max-w-[30rem]'
       />
     </div>
   )

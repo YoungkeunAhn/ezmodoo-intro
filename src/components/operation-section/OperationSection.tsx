@@ -7,13 +7,13 @@ function OperationSection() {
   return (
     <Container flexDirection='column'>
       <div className='pt-10 lg:py-0'>
-        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm my-3'>
+        <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm sm:text-lg my-3'>
           Special Solution
         </span>
-        <h1 className='font-bold text-center lg:mb-6 text-3xl lg:text-6xl tracking-[-2.3px]'>
+        <h1 className='font-bold text-center lg:mb-6 text-3xl sm:text-5xl lg:text-6xl tracking-[-2.3px]'>
           {operation.title}
         </h1>
-        <h2 className='text-center mt-2 mb-10 lg:mb-14 text-[#38485B] tracking-[-2.3px] text-[1.35rem] lg:text-4xl'>
+        <h2 className='text-center mt-2 mb-10 lg:mb-14 text-[#38485B] tracking-[-2.3px] text-[1.35rem] sm:text-[2.1rem] lg:text-4xl'>
           {operation.subTitle}
         </h2>
       </div>

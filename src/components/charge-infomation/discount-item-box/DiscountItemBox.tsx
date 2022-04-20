@@ -9,7 +9,7 @@ function DiscountItemBox(props: Props) {
 
   return (
     <div className='flex flex-col justify-center items-center text-lg'>
-      <div className='text-sm md:text-base'>{mounth}개월 선납시</div>
+      <div className='text-sm sm:text-base'>{mounth}개월 선납시</div>
       <img src={image} alt={`${mounth}mount discount`} />
     </div>
   )

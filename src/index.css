@@ -83,16 +83,31 @@ input[type='checkbox']:checked::after {
 }
 
 .m-swiper h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .m-swiper h2 {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
 }
 .m-swiper h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .m-swiper h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .m-swiper h1 {
+    font-size: 2rem;
+  }
+  .m-swiper h2 {
+    font-size: 1.75rem;
+  }
+  .m-swiper h3 {
+    font-size: 1.5rem;
+  }
+  .m-swiper h4 {
+    font-size: 1.25rem;
+  }
 }
 @media screen and (max-width: 1020px) {
   .swiper-pagination-bullet {

@@ -18,7 +18,7 @@ function SellerSection() {
         <Container noBg>
           <div className='flex flex-col items-center'>
             <h1
-              className='lg:text-5xl font-bold mb-14 text-center leading-relaxed'
+              className='lg:leading-relaxed lg:text-5xl font-bold mb-14 text-center'
               dangerouslySetInnerHTML={{ __html: sellerEasy.title }}
             ></h1>
 

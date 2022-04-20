@@ -33,7 +33,7 @@ function AccessionStep() {
             <div key={idx} className='flex flex-col justify-center'>
               <img src={step.mImage} alt={step.text} className='w-full' />
               <span
-                className='text-center -translate-x-5 text-sm mt-3'
+                className='text-center -translate-x-5 text-sm mt-3 sm:text-base'
                 dangerouslySetInnerHTML={{ __html: step.text }}
               ></span>
             </div>

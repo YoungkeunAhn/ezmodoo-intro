@@ -22,7 +22,7 @@ function ChargeInfomation() {
             <h2 className='text-3xl md:text-5xl font-bold mb-6 md:mb-10'>
               선납할인율
             </h2>
-            <div className='flex flex-col text-xs md:text-base'>
+            <div className='flex flex-col text-xs sm:text-base'>
               <span>* 가입비와 판매수수료는 따로 없습니다.</span>
               <span>* 부가서비스는 별도신청입니다.</span>
             </div>

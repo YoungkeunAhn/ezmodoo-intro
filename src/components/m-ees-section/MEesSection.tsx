@@ -19,20 +19,20 @@ function MEesSection(props: Props) {
       }}
       className={`flex justify-center items-center min-h-[360px] relative ${className}`}
     >
-      <div className='flex justify-center items-center absolute left-[48vw] md:left-[250px] pr-5'>
+      <div className='flex justify-center items-center absolute left-[48vw] sm:left-[250px] pr-5'>
         <div className='text-white text-left'>
           {mEes.title.split(' ').map((word, idx) => (
-            <h2 key={idx} className='font-medium text-2xl'>
+            <h2 key={idx} className='font-bold text-2xl'>
               {word}
             </h2>
           ))}
 
           <h3
-            className='mt-4 mb-10 leading-relaxed md:text-lg'
+            className='mt-4 mb-10 leading-relaxed sm:text-xl'
             dangerouslySetInnerHTML={{ __html: mEes.content }}
           ></h3>
-          <h3 className='md:text-lg'>
-            <span className='font-bold md:text-xl'>모두편해 </span>
+          <h3 className='sm:text-xl'>
+            <span className='font-bold sm:text-2xl'>모두편해 </span>
             {mEes.bottom}
           </h3>
         </div>

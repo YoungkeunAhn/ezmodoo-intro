@@ -86,7 +86,7 @@ function MTopMenu(props: Props) {
                     className='cursor-pointer flex justify-between items-center'
                     onClick={(e) =>
                       menu.subTitle.length === 0
-                        ? (window.location.href = '/ezmodoo_intro')
+                        ? (window.location.href = '/ezmodoo_intro/')
                         : openSubMenu(menu.title)
                     }
                   >

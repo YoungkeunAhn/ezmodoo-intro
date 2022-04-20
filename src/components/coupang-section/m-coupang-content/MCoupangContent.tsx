@@ -8,7 +8,7 @@ function MCoupangContent() {
       <img
         src='coupang_img.png'
         alt='coupang monitor'
-        className='w-[80vw] max-w-[29rem] mx-auto my-14'
+        className='w-[80vw] mx-auto my-14'
       />
 
       <div className='grid grid-cols-2 grid-flow-row w-full justify-items-center gap-x-2 sm:gap-x-4'>

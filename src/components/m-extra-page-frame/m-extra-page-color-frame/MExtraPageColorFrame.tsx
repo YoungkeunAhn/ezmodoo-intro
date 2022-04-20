@@ -18,7 +18,7 @@ export default function MExtraPageColorFrame(props: Props) {
           }}
         >
           <span className='text-2xl font-bold mr-3'>0{idx + 1}</span>
-          <span className='text-sm'>{title}</span>
+          <span className='text-sm sm:text-base'>{title}</span>
         </div>
       ))}
     </div>

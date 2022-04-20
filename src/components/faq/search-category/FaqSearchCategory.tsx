@@ -53,7 +53,7 @@ function FaqSearchCategory(props: Props) {
           ))}
         </div>
       </div>
-      <div className='bg-white p-2 md:py-5 flex justify-between items-center mt-10 rounded-[4px] border'>
+      <div className='bg-white p-2 md:py-5 flex justify-between sm:justify-center items-center mt-10 rounded-[4px] border'>
         <div className='w-full md:w-3/4 flex space-x-2 '>
           <select
             className='border rounded-[4px] px-2 text-sm md:text-base'

@@ -13,7 +13,7 @@ function FaqSearchCategoryItemBtn(props: Props) {
 
   return (
     <button
-      className={`flex flex-1 flex-col items-center pb-2 md:p-4 rounded-lg cursor-pointer w-[4rem] h-[4rem] md:h-[10rem] border ${
+      className={`flex flex-1 flex-col items-center pb-2 sm:p-4 rounded-lg cursor-pointer w-[4rem] h-[4rem] sm:w-[7rem] sm:h-[7rem] md:h-[10rem] border ${
         searchOption.cateId === cateId
           ? 'bg-[#ccc] '
           : 'bg-white text-[#31415E]'
@@ -24,11 +24,11 @@ function FaqSearchCategoryItemBtn(props: Props) {
         <img
           src={icon}
           alt='category icon'
-          className='w-[20px] h-[20px] md:w-[60px] md:h-[60px] object-contain'
+          className='w-[20px] h-[20px] sm:w-[60px] sm:h-[60px] object-contain'
         />
       </div>
       <span
-        className='font-bold text-xs md:text-base'
+        className='font-bold text-xs sm:text-base'
         style={{ wordBreak: 'keep-all' }}
       >
         {cateName}

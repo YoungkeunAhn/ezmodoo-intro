@@ -12,23 +12,25 @@ function EesSection() {
           backgroundSize: 'cover',
           backgroundPosition: 'bottom',
         }}
-        className='h-[40rem] justify-center items-center hidden lg:flex'
+        className='py-36 lg:py-0 lg:h-[40rem] justify-center items-center hidden md:flex'
       >
-        <div className='flex justify-center items-center ml-48'>
+        <div className='flex justify-center items-center ml-32 lg:ml-48'>
           <div className='text-white text-center'>
-            <h1 className='text-6xl font-medium mb-10'>{ees.title}</h1>
+            <h1 className='text-3xl lg:text-6xl font-medium mb-10'>
+              {ees.title}
+            </h1>
             <h2
-              className='text-4xl mb-10 leading-relaxed'
+              className='text-xl lg:text-4xl mb-10 leading-relaxed'
               dangerouslySetInnerHTML={{ __html: ees.content }}
             ></h2>
-            <h1 className='text-3xl'>
+            <h1 className='text-lg lg:text-3xl'>
               <span className='text-4xl font-bold'>모두편해 </span>
               {ees.bottom}
             </h1>
           </div>
         </div>
       </div>
-      <MEesSection className='block lg:hidden' />
+      <MEesSection className='block md:hidden' />
     </section>
   )
 }

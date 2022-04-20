@@ -1,5 +1,6 @@
 import { mBanner } from 'data/banner'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { A11y, Autoplay, Pagination } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/autoplay'
@@ -31,16 +32,18 @@ function MBannerSection() {
           <div className='w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
             <div dangerouslySetInnerHTML={{ __html: item.content }}></div>
             {item.button && (
-              <button
-                className='py-2 px-4 mx-auto my-[6vh] block'
-                style={{
-                  border: item.button.border,
-                  color: item.button.color,
-                  borderRadius: item.button.radius,
-                }}
-              >
-                {item.button?.title}
-              </button>
+              <Link to={item.url ?? ''}>
+                <button
+                  className='py-2 px-4 sm:py-4 sm:px-6 mx-auto my-[6vh] block sm:text-2xl'
+                  style={{
+                    border: item.button.border,
+                    color: item.button.color,
+                    borderRadius: item.button.radius,
+                  }}
+                >
+                  {item.button?.title}
+                </button>
+              </Link>
             )}
 
             {item.bottomContent && (

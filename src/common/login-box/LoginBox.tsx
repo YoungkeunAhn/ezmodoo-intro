@@ -42,7 +42,7 @@ function LoginBox(props: Props) {
         open ? 'opacity-100' : 'opacity-0 hidden'
       }`}
     >
-      <div className='bg-[#7FA2C2] flex justify-center items-center rounded-t-[10px] p-3'>
+      <div className='bg-[#7FA2C2] flex justify-center items-center rounded-t-[10px] p-3 sm:p-5'>
         <img
           src='white_logo.png'
           alt='white logo'
@@ -59,27 +59,30 @@ function LoginBox(props: Props) {
           <div className='flex flex-col mt-5 w-full space-y-2'>
             <input
               type='text'
-              className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none text-center'
+              className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none text-center sm:h-11'
               placeholder='도메인'
               name='domain'
               value={inputs.domain}
               onChange={onChangeInputs}
+              required
             />
             <input
               type='text'
-              className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none text-center'
+              className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none text-center sm:h-11'
               placeholder='사용자아이디'
               name='mb_id'
               value={inputs.mb_id}
               onChange={onChangeInputs}
+              required
             />
             <input
               type='password'
-              className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none text-center'
+              className='form-control block w-full px-4 py-2 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none text-center sm:h-11'
               placeholder='비밀번호'
               name='mb_password'
               value={inputs.mb_password}
               onChange={onChangeInputs}
+              required
             />
           </div>
           <div>
@@ -103,8 +106,8 @@ function LoginBox(props: Props) {
             </div>
           </div>
         </div>
-        <div className='bg-[#7FA2C2] flex justify-center items-center p-3 rounded-b-[10px] text-xl hover:cursor-pointer hover:text-[1.3rem]'>
-          <button type='submit' className='text-white font-bold'>
+        <div className='bg-[#7FA2C2] flex justify-center items-center p-3 rounded-b-[10px] text-xl hover:cursor-pointer hover:text-[1.3rem] sm:p-5'>
+          <button type='submit' className='text-white font-bold sm:text-2xl'>
             Login
           </button>
         </div>
