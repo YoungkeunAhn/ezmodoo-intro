@@ -147,7 +147,7 @@ function Join() {
           button={
             <button
               type='submit'
-              className='bg-white w-40 rounded-3xl py-2 hover:bg-[#eee] cursor-pointer'
+              className='bg-white w-40 rounded-3xl py-2 hover:bg-[#eee] cursor-pointer font-bold'
             >
               가입하기
             </button>
