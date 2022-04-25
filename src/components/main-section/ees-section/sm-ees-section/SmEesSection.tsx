@@ -5,7 +5,7 @@ type Props = {
   className: string
 }
 
-function MEesSection(props: Props) {
+function SmEesSection(props: Props) {
   const { className } = props
 
   return (
@@ -41,4 +41,4 @@ function MEesSection(props: Props) {
   )
 }
 
-export default MEesSection
+export default SmEesSection

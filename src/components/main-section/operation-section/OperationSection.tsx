@@ -1,5 +1,5 @@
 import Container from 'common/custom-container/Container'
-import MOperationSection from 'components/m-main-section/m-operation-section/MOperationSection'
+import SmOperationSection from 'components/main-section/operation-section/sm-operation-section/SmOperationSection'
 import { operation } from 'data/section-content'
 import React from 'react'
 
@@ -28,7 +28,7 @@ function OperationSection() {
           </div>
         ))}
       </div>
-      <MOperationSection />
+      <SmOperationSection />
     </Container>
   )
 }

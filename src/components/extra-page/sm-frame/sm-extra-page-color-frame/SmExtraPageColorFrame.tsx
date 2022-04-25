@@ -4,7 +4,7 @@ type Props = {
   data: { titleList: string[]; mainColor: string; subColor: string }
 }
 
-export default function MExtraPageColorFrame(props: Props) {
+export default function SmExtraPageColorFrame(props: Props) {
   const { data } = props
   const { titleList, mainColor, subColor } = data
 

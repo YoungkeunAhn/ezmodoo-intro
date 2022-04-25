@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function MFulfillmentSection() {
+export default function SmFulfillmentSection() {
   return (
     <div className='flex flex-col py-10 space-y-5 lg:hidden w-full sm:w-[80vw] m-auto'>
       <div className='flex flex-col space-y-4 px-2'>

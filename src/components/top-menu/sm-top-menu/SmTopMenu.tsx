@@ -9,7 +9,7 @@ type Props = {
   className?: string
 }
 
-function MTopMenu(props: Props) {
+function SmTopMenu(props: Props) {
   const { className } = props
   const [open, setOpen] = useState<boolean>(false)
   const [currentMenu, setCurrentMenu] = useState<string>('')
@@ -33,10 +33,6 @@ function MTopMenu(props: Props) {
 
   const closeLoginBox = () => {
     setLoginBox(false)
-  }
-
-  const goHome = () => {
-    alert('x')
   }
 
   return (
@@ -148,4 +144,4 @@ function MTopMenu(props: Props) {
   )
 }
 
-export default MTopMenu
+export default SmTopMenu

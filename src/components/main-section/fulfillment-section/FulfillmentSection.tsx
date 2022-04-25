@@ -1,10 +1,15 @@
+import Aos from 'aos'
 import ButtonBox from 'common/button-box/ButtonBox'
 import Container from 'common/custom-container/Container'
-import MFulfillmentSection from 'components/m-main-section/m-fulfillment-section/MFulfillmentSection'
+import SmFulfillmentSection from 'components/main-section/fulfillment-section/sm-fulfillment-section/SmFulfillmentSection'
 import { fulfillment } from 'data/section-content'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function FulfillmentSection() {
+  useEffect(() => {
+    Aos.init()
+  })
+
   return (
     <>
       <div
@@ -16,7 +21,7 @@ function FulfillmentSection() {
       >
         <div style={{ background: 'rgba(0,0,0,0.5)' }}>
           <Container noBg>
-            <div>
+            <div data-aos='fade-up'>
               <div className='flex justify-between text-white items-end'>
                 <div className='flex'>
                   <div className='flex flex-col mr-10 mb-11 items-start'>
@@ -62,7 +67,7 @@ function FulfillmentSection() {
           </Container>
         </div>
       </div>
-      <MFulfillmentSection />
+      <SmFulfillmentSection />
     </>
   )
 }

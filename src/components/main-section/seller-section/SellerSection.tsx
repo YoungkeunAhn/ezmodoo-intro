@@ -1,6 +1,6 @@
 import ButtonBox from 'common/button-box/ButtonBox'
 import Container from 'common/custom-container/Container'
-import MSellerSection from 'components/m-main-section/m-seller-section/MSellerSection'
+import SmSellerSection from 'components/main-section/seller-section/sm-seller-section/SmSellerSection'
 import { sellerEasy } from 'data/section-content'
 import React from 'react'
 
@@ -30,7 +30,7 @@ function SellerSection() {
           </div>
         </Container>
       </div>
-      <MSellerSection />
+      <SmSellerSection />
     </div>
   )
 }

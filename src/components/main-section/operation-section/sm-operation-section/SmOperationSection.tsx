@@ -1,7 +1,7 @@
 import { mOperation } from 'data/section-content'
 import React from 'react'
 
-function MOperationSection() {
+function SmOperationSection() {
   return (
     <div className='grid grid-rows-2 grid-flow-col justify-center sm:justify-evenly gap-y-5 sm:gap-y-24 sm:gap-x-5 lg:hidden pb-5 sm:mb-24'>
       {mOperation.itemList.map((item, idx) => (
@@ -21,4 +21,4 @@ function MOperationSection() {
   )
 }
 
-export default MOperationSection
+export default SmOperationSection

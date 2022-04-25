@@ -1,5 +1,5 @@
 import Aos from 'aos'
-import MEesSection from 'components/m-main-section/m-ees-section/MEesSection'
+import SmEesSection from 'components/main-section/ees-section/sm-ees-section/SmEesSection'
 import { ees } from 'data/section-content'
 import React, { useEffect } from 'react'
 
@@ -38,7 +38,7 @@ function EesSection() {
           </div>
         </div>
       </div>
-      <MEesSection className='block md:hidden' />
+      <SmEesSection className='block md:hidden' />
     </section>
   )
 }

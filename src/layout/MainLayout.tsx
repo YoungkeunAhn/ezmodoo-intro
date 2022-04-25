@@ -1,5 +1,5 @@
 import ScrollTopBtn from 'common/scroll-top-btn/ScrollTopBtn'
-import MTopMenu from 'components/m-top-menu/MTopMenu'
+import SmTopMenu from 'components/top-menu/sm-top-menu/SmTopMenu'
 import TopMenu from 'components/top-menu/TopMenu'
 import React from 'react'
 
@@ -13,7 +13,7 @@ function MainLayout(props: Props) {
   return (
     <div>
       <TopMenu className='hidden lg:block' />
-      <MTopMenu className='block lg:hidden' />
+      <SmTopMenu className='block lg:hidden' />
       <main>{children}</main>
       <ScrollTopBtn />
     </div>

@@ -6,7 +6,7 @@ type Props = {
   data: mCardType
 }
 
-export default function MCardBox(props: Props) {
+export default function SmCardBox(props: Props) {
   const { data } = props
 
   return (

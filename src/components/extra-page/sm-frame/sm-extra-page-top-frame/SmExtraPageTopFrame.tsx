@@ -1,4 +1,4 @@
-import ExtraPageCardItem from 'components/extra-page-card-item/ExtraPageCardItem'
+import ExtraPageCardItem from 'components/extra-page/card-item/ExtraPageCardItem'
 import React from 'react'
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
   color: string
 }
 
-export default function MExtraPageTopFrame(props: Props) {
+export default function SmExtraPageTopFrame(props: Props) {
   const { cardList, color } = props
 
   return (

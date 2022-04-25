@@ -7,14 +7,13 @@ import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-function MBannerSection() {
+function SmBannerSection() {
   return (
     <Swiper
       modules={[A11y, Pagination, Autoplay]}
       slidesPerView={1}
       navigation
       loop={true}
-      // autoplay={{ delay: 4000 }}
       speed={300}
       pagination={{ clickable: true }}
       className='w-full h-[calc(100vh-64px)] lg:hidden m-swiper'
@@ -58,4 +57,4 @@ function MBannerSection() {
   )
 }
 
-export default MBannerSection
+export default SmBannerSection

@@ -3,7 +3,7 @@ import ButtonBox from 'common/button-box/ButtonBox'
 import { sellerEasy } from 'data/section-content'
 import React, { useEffect } from 'react'
 
-function MSellerSection() {
+function SmSellerSection() {
   useEffect(() => {
     Aos.init()
   })
@@ -36,4 +36,4 @@ function MSellerSection() {
   )
 }
 
-export default MSellerSection
+export default SmSellerSection
