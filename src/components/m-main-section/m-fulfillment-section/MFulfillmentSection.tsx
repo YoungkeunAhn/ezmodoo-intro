@@ -6,7 +6,7 @@ export default function MFulfillmentSection() {
     <div className='flex flex-col py-10 space-y-5 lg:hidden w-full sm:w-[80vw] m-auto'>
       <div className='flex flex-col space-y-4 px-2'>
         {new Array(3).fill(0).map((x, idx) => (
-          <Link to='/question'>
+          <Link to='/question' key={idx}>
             <img
               src={`m_fulfill_content${idx + 1}.jpg`}
               alt='fulfillment content'

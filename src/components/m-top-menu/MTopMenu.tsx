@@ -107,7 +107,7 @@ function MTopMenu(props: Props) {
                       style={{ transition: '.5s' }}
                     >
                       {menu.subTitle.map((sub, idx) => (
-                        <Link to={sub.url} className='w-full'>
+                        <Link to={sub.url} className='w-full' key={idx}>
                           <li key={idx}>- {sub.title}</li>
                         </Link>
                       ))}

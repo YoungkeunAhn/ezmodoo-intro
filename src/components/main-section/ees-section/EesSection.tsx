@@ -1,8 +1,13 @@
+import Aos from 'aos'
 import MEesSection from 'components/m-main-section/m-ees-section/MEesSection'
 import { ees } from 'data/section-content'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function EesSection() {
+  useEffect(() => {
+    Aos.init()
+  })
+
   return (
     <section>
       <div
@@ -14,7 +19,10 @@ function EesSection() {
         }}
         className='py-36 lg:py-0 lg:h-[40rem] justify-center items-center hidden md:flex'
       >
-        <div className='flex justify-center items-center ml-32 lg:ml-48'>
+        <div
+          className='flex justify-center items-center ml-32 lg:ml-48'
+          data-aos='fade-up'
+        >
           <div className='text-white text-center'>
             <h1 className='text-3xl lg:text-6xl font-medium mb-10'>
               {ees.title}

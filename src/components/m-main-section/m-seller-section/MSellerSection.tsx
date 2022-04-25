@@ -1,8 +1,13 @@
+import Aos from 'aos'
 import ButtonBox from 'common/button-box/ButtonBox'
 import { sellerEasy } from 'data/section-content'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function MSellerSection() {
+  useEffect(() => {
+    Aos.init()
+  })
+
   return (
     <div
       className='lg:hidden py-10'
@@ -12,7 +17,10 @@ function MSellerSection() {
         backgroundPosition: 'center',
       }}
     >
-      <div className='flex flex-col justify-center items-center px-4 sm:px-8 pt-20 pb-10 sm:py-10'>
+      <div
+        className='flex flex-col justify-center items-center px-4 sm:px-8 pt-20 pb-10 sm:py-10'
+        data-aos='fade-up'
+      >
         <h3 className='mb-3 sm:text-2xl'>셀러가 이렇게 쉬울 일이야?</h3>
         <h2 className='text-xl sm:text-4xl font-bold'>
           모두에게 쉽고 너무 편해서

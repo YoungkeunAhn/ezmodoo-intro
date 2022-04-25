@@ -7,7 +7,7 @@ import CoupangContent from './coupang-content/CoupangContent'
 function CoupangSection() {
   return (
     <Container noFixedHeight>
-      <div className='flex flex-col justify-between items-center py-10 sm:pb-16'>
+      <div className='flex flex-col justify-between items-center py-20 sm:pb-16 md:pb-20'>
         <span className='block lg:hidden text-[#FF9600] font-bold text-center text-sm sm:text-lg my-3'>
           Special Manager
         </span>
