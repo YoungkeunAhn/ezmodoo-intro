@@ -1,8 +1,8 @@
 import Container from 'common/custom-container/Container'
+import MCoupangContent from 'components/m-main-section/m-coupang-content/MCoupangContent'
 import { coupang } from 'data/section-content'
 import React from 'react'
 import CoupangContent from './coupang-content/CoupangContent'
-import MCoupangContent from './m-coupang-content/MCoupangContent'
 
 function CoupangSection() {
   return (

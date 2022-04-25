@@ -1,5 +1,5 @@
 import Container from 'common/custom-container/Container'
-import MOperationSection from 'components/m-operation-section/MOperationSection'
+import MOperationSection from 'components/m-main-section/m-operation-section/MOperationSection'
 import { operation } from 'data/section-content'
 import React from 'react'
 

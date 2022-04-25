@@ -1,4 +1,4 @@
-import MEesSection from 'components/m-ees-section/MEesSection'
+import MEesSection from 'components/m-main-section/m-ees-section/MEesSection'
 import { ees } from 'data/section-content'
 import React from 'react'
 

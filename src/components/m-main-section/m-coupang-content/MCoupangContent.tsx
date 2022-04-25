@@ -1,6 +1,6 @@
+import CoupangItemBox from 'components/coupang-item-box/CoupangItemBox'
 import { coupang } from 'data/section-content'
 import React from 'react'
-import CoupangItemBox from '../item-box/CoupangItemBox'
 
 function MCoupangContent() {
   return (

@@ -1,6 +1,6 @@
 import ButtonBox from 'common/button-box/ButtonBox'
 import Container from 'common/custom-container/Container'
-import MFulfillmentSection from 'components/m-fulfillment-section/MFulfillmentSection'
+import MFulfillmentSection from 'components/m-main-section/m-fulfillment-section/MFulfillmentSection'
 import { fulfillment } from 'data/section-content'
 import React from 'react'
 
