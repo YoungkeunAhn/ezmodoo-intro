@@ -1,5 +1,5 @@
 import BannerSection from 'components/main-section/banner-section/BannerSection'
-import CardSection from 'components/card-section/CardSection'
+import CardSection from 'components/main-section/fulfillment-section/fulfillment-card-section/CardSection'
 import CoupangSection from 'components/main-section/coupang-section/CoupangSection'
 import Footer from 'components/footer/Footer'
 import EesSection from 'components/main-section/ees-section/EesSection'
