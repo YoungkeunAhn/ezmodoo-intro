@@ -1,4 +1,4 @@
-import CoupangContent from 'components/coupang-section/coupang-content/CoupangContent'
+import CoupangContent from 'components/main-section/coupang-section/coupang-content/CoupangContent'
 import React from 'react'
 
 function ChargeInfoBasicService() {
